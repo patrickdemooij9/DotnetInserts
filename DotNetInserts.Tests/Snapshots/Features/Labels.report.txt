@@ -1,0 +1,11 @@
+insert: Labels
+box:    250 x 110 x 30 mm
+parts:  3
+
+part                    corner (x,y,z)            size (x,y,z)              
+----------------------------------------------------------------------------
+AllFourWalls            (0, 0, 0)                 (90, 70, 25)              
+NudgedAndDeep           (96, 0, 0)                (70, 70, 25)              
+HolderWithBoth          (172, 0, 0)               (73, 100, 24)             
+
+issues: none

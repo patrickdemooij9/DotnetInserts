@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetInserts.Core\DotNetInserts.Core.csproj" />
+    <!-- Same DLL DotNetInserts.Core references; needed here because it is a bare
+         assembly reference (not a package) and so is not transitively exposed. -->
+    <Reference Include="OSCADSharp">
+      <HintPath>..\..\OscadSharp\OSCADSharp\OSCADSharp\OSCADSharp\bin\Debug\OSCADSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <!-- Fixtures and snapshots are deliberately NOT copied to the output folder: the tests
+       resolve them in the source tree (see TestPaths), so that regenerating a snapshot
+       writes the file you actually commit. -->
+
+</Project>

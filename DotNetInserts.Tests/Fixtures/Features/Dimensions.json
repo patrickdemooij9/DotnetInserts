@@ -1,0 +1,87 @@
+{
+  "name": "Dimensions",
+  "size": { "x": 200, "y": 100, "z": 30 },
+  "parts": [
+    {
+      "$type": "box",
+      "name": "Anchor",
+      "id": "f4000000-0000-4000-8000-000000000001",
+      "size": {
+        "x": { "$type": "fixed", "size": 70 },
+        "y": { "$type": "fixed", "size": 100 },
+        "z": { "$type": "fixed", "size": 30 }
+      },
+      "location": {
+        "x": { "$type": "fixed", "size": 0 },
+        "y": { "$type": "fixed", "size": 0 },
+        "z": { "$type": "fixed", "size": 0 }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "name": "AlignedWell",
+          "id": "f4000000-0000-4000-8000-000000000002",
+          "size": {
+            "x": { "$type": "constant", "constantType": 0 },
+            "y": { "$type": "fixed", "size": 40 },
+            "z": { "$type": "fixed", "size": 26 }
+          },
+          "location": {
+            "x": { "$type": "fixed", "size": 0 },
+            "y": { "$type": "parentAlign", "alignType": 0, "gap": 2 },
+            "z": { "$type": "fixed", "size": 0 }
+          }
+        }
+      ]
+    },
+    {
+      "$type": "box",
+      "name": "Computed",
+      "id": "f4000000-0000-4000-8000-000000000003",
+      "size": {
+        "x": { "$type": "computed", "expression": "#Anchor.X + 30" },
+        "y": { "$type": "computed", "expression": "#Anchor.Y / 2 + 0,5" },
+        "z": { "$type": "computed", "expression": "#Anchor.AlignedWell.Z + 4" }
+      },
+      "location": {
+        "x": { "$type": "computed", "expression": "#Anchor.X" },
+        "y": { "$type": "fixed", "size": 0 },
+        "z": { "$type": "fixed", "size": 0 }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "name": "Inner",
+          "id": "f4000000-0000-4000-8000-000000000004",
+          "size": {
+            "x": { "$type": "computed", "expression": "#Computed.X - 8" },
+            "y": { "$type": "computed", "expression": "#Computed.Y - 8" },
+            "z": { "$type": "fixed", "size": 24 }
+          },
+          "location": {
+            "x": { "$type": "fixed", "size": 0 },
+            "y": { "$type": "fixed", "size": 0 },
+            "z": { "$type": "fixed", "size": 0 }
+          }
+        }
+      ]
+    },
+    {
+      "$type": "box",
+      "name": "NotRendered",
+      "id": "f4000000-0000-4000-8000-000000000005",
+      "hidden": true,
+      "size": {
+        "x": { "$type": "fixed", "size": 10 },
+        "y": { "$type": "fixed", "size": 10 },
+        "z": { "$type": "fixed", "size": 10 }
+      },
+      "location": {
+        "x": { "$type": "fixed", "size": 0 },
+        "y": { "$type": "fixed", "size": 0 },
+        "z": { "$type": "fixed", "size": 0 }
+      },
+      "components": []
+    }
+  ]
+}

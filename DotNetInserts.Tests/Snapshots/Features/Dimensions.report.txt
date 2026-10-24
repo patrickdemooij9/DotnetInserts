@@ -1,0 +1,10 @@
+insert: Dimensions
+box:    200 x 100 x 30 mm
+parts:  2 (+1 hidden)
+
+part                    corner (x,y,z)            size (x,y,z)              
+----------------------------------------------------------------------------
+Anchor                  (0, 0, 0)                 (70, 100, 30)             
+Computed                (70, 0, 0)                (100, 50.5, 30)           
+
+issues: none

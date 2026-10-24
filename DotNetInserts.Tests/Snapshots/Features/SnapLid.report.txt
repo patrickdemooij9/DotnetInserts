@@ -1,0 +1,10 @@
+insert: SnapLid
+box:    200 x 90 x 45 mm
+parts:  2
+
+part                    corner (x,y,z)            size (x,y,z)              
+----------------------------------------------------------------------------
+BreakawayArms           (0, 0, 0)                 (95, 90, 45)              
+FourArmsSquareBox       (103, 0, 0)               (95, 90, 45)              
+
+issues: none

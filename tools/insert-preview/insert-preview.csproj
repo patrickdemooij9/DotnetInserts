@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>insert-preview</AssemblyName>
+    <!-- Not part of DotNetInserts.sln on purpose: a standalone dev tool. -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DotNetInserts.Core\DotNetInserts.Core.csproj" />
+    <!-- Same DLL DotNetInserts.Core references; needed here because it is a bare
+         assembly reference (not a package) and so is not transitively exposed. -->
+    <Reference Include="OSCADSharp">
+      <HintPath>..\..\..\OscadSharp\OSCADSharp\OSCADSharp\OSCADSharp\bin\Debug\OSCADSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

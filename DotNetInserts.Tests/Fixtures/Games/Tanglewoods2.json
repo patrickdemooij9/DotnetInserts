@@ -1,0 +1,438 @@
+{
+  "name": "Tanglewoods2",
+  "size": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "parts": [
+    {
+      "$type": "box",
+      "name": "Box",
+      "id": "c934854a-dde2-4ec3-8e69-c593557035d6",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 250
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 142
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 98
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "id": "b927516a-e61d-4ed1-bd74-89a13bba15fb",
+          "name": "Inner One",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 244
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 68
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 93
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "verticalCutouts": {
+            "left": {
+              "$type": "horizontal",
+              "size": {
+                "X": 40,
+                "Y": 20,
+                "Z": 40
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "curveSize": 8
+            },
+            "right": {
+              "$type": "horizontal",
+              "size": {
+                "X": 40,
+                "Y": 20,
+                "Z": 40
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "curveSize": 8
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "2b5a7b73-fbe1-47b9-b0b4-6ab67f0deecf",
+          "name": "Inner Two",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 244
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 68
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 93
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "verticalCutouts": {
+            "left": {
+              "$type": "horizontal",
+              "size": {
+                "X": 40,
+                "Y": 20,
+                "Z": 40
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "curveSize": 8
+            },
+            "right": {
+              "$type": "horizontal",
+              "size": {
+                "X": 40,
+                "Y": 20,
+                "Z": 40
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "curveSize": 8
+            }
+          }
+        }
+      ],
+      "roundRadius": 0,
+      "lid": {
+        "wallSize": 3,
+        "topSize": 3
+      }
+    },
+    {
+      "$type": "box",
+      "name": "CardBox",
+      "id": "d4db3a8f-03ff-4580-bc2e-197e93099b27",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 30
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 67
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 92
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 2
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 2
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "id": "7835a7d1-2bbd-4ae7-9bbe-eb1a805ac599",
+          "name": "Inner",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "10"
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#CardBox.Y-2"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#CardBox.Z-1"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "gap": 1,
+              "alignType": 3
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "verticalCutouts": {
+            "right": {
+              "$type": "horizontal",
+              "size": {
+                "X": 30,
+                "Y": 40,
+                "Z": 20
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "curveSize": 5
+            },
+            "left": {
+              "$type": "horizontal",
+              "size": {
+                "X": 30,
+                "Y": 40,
+                "Z": 20
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "curveSize": 5
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "64591593-bd4e-413f-98a6-45b5e8f1129d",
+          "name": "Inner2",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#CardBox.X-3-15"
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#CardBox.Y-2"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#CardBox.Z-1"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 1,
+              "gap": 1
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "verticalCutouts": {
+            "right": {
+              "$type": "horizontal",
+              "size": {
+                "X": 30,
+                "Y": 40,
+                "Z": 10
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "curveSize": 5
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "4354791a-52ba-4482-a2d7-d4b9044c1e19",
+          "name": "Inner3",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 4
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#CardBox.Y-2"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#CardBox.Z-1"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 12
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        }
+      ],
+      "roundRadius": 0
+    }
+  ]
+}

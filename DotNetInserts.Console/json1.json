@@ -1,0 +1,351 @@
+{
+  "Name": "Test",
+  "Size": {
+    "X": 290,
+    "Y": 190,
+    "Z": 45
+  },
+  "Parts": [
+    {
+      "$type": "box",
+      "Id": "CardBox1",
+      "Size": {
+        "X": {
+          "$type": "fixed",
+          "Size": 79
+        },
+        "Y": {
+          "$type": "fixed",
+          "Size": 95
+        },
+        "Z": {
+          "$type": "fixed",
+          "Size": 46
+        }
+      },
+      "Components": [
+        {
+          "$type": "box",
+          "Size": {
+            "X": {
+              "$type": "constant",
+              "ConstantType": 0
+            },
+            "Y": {
+              "$type": "constant",
+              "ConstantType": 2
+            },
+            "Z": {
+              "$type": "fixed",
+              "Size": 45.2
+            }
+          },
+          "HorizontalCutouts": {
+            "Right": {
+              "$type": "cube",
+              "Size": {
+                "X": 50,
+                "Y": 50,
+                "Z": 10
+              }
+            }
+          },
+          "VerticalCutouts": {
+            "Right": {
+              "$type": "horizontal",
+              "Size": {
+                "X": 50,
+                "Y": 4,
+                "Z": 45.2
+              },
+              "CurveSize": 4
+            }
+          },
+          "Location": {
+            "X": {
+              "$type": "fixed",
+              "Size": -4
+            },
+            "Y": {
+              "$type": "fixed",
+              "Size": 0
+            },
+            "Z": {
+              "$type": "fixed",
+              "Size": 0
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "Size": {
+            "X": {
+              "$type": "fixed",
+              "Size": 8
+            },
+            "Y": {
+              "$type": "fixed",
+              "Size": 90
+            },
+            "Z": {
+              "$type": "fixed",
+              "Size": 45
+            }
+          },
+          "Location": {
+            "X": {
+              "$type": "parentAlign",
+              "AlignType": 1
+            },
+            "Y": {
+              "$type": "fixed",
+              "Size": 0
+            },
+            "Z": {
+              "$type": "fixed",
+              "Size": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$type": "box",
+      "Id": "CardBox2",
+      "Size": {
+        "X": {
+          "$type": "fixed",
+          "Size": 88
+        },
+        "Y": {
+          "$type": "fixed",
+          "Size": 95
+        },
+        "Z": {
+          "$type": "fixed",
+          "Size": 45
+        }
+      },
+      "Components": [
+        {
+          "$type": "box",
+          "Size": {
+            "X": {
+              "$type": "constant",
+              "ConstantType": 0
+            },
+            "Y": {
+              "$type": "constant",
+              "ConstantType": 2
+            },
+            "Z": {
+              "$type": "fixed",
+              "Size": 43
+            }
+          },
+          "HorizontalCutouts": {
+            "Right": {
+              "$type": "cube",
+              "Size": {
+                "X": 50,
+                "Y": 30,
+                "Z": 10
+              }
+            },
+            "Left": {
+              "$type": "cube",
+              "Size": {
+                "X": 50,
+                "Y": 30,
+                "Z": 10
+              }
+            }
+          },
+          "VerticalCutouts": {
+            "Right": {
+              "$type": "horizontal",
+              "Size": {
+                "X": 50,
+                "Y": 4,
+                "Z": 43
+              },
+              "CurveSize": 4
+            },
+            "Left": {
+              "$type": "horizontal",
+              "Size": {
+                "X": 50,
+                "Y": 4,
+                "Z": 43
+              },
+              "CurveSize": 4
+            }
+          },
+          "Location": {
+            "X": {
+              "$type": "fixed",
+              "Size": 0
+            },
+            "Y": {
+              "$type": "fixed",
+              "Size": 0
+            },
+            "Z": {
+              "$type": "fixed",
+              "Size": 0
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "Size": {
+            "X": {
+              "$type": "fixed",
+              "Size": 8
+            },
+            "Y": {
+              "$type": "fixed",
+              "Size": 90
+            },
+            "Z": {
+              "$type": "fixed",
+              "Size": 45
+            }
+          },
+          "Location": {
+            "X": {
+              "$type": "parentAlign",
+              "AlignType": 1
+            },
+            "Y": {
+              "$type": "fixed",
+              "Size": 0
+            },
+            "Z": {
+              "$type": "fixed",
+              "Size": 0
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "Size": {
+            "X": {
+              "$type": "fixed",
+              "Size": 8
+            },
+            "Y": {
+              "$type": "fixed",
+              "Size": 90
+            },
+            "Z": {
+              "$type": "fixed",
+              "Size": 45
+            }
+          },
+          "Location": {
+            "X": {
+              "$type": "parentAlign",
+              "AlignType": 3
+            },
+            "Y": {
+              "$type": "fixed",
+              "Size": 0
+            },
+            "Z": {
+              "$type": "fixed",
+              "Size": 0
+            }
+          }
+        }
+      ],
+      "Location": {
+        "X": {
+          "$type": "partAlign",
+          "PartId": "CardBox1",
+          "AlignType": 1
+        },
+        "Y": {
+          "$type": "fixed",
+          "Size": 0
+        },
+        "Z": {
+          "$type": "fixed",
+          "Size": 0
+        }
+      }
+    },
+    {
+      "$type": "box",
+      "Id": "Tokenbox",
+      "RoundRadius": 6,
+      "Size": {
+        "X": {
+          "$type": "fixed",
+          "Size": 44
+        },
+        "Y": {
+          "$type": "fixed",
+          "Size": 190
+        },
+        "Z": {
+          "$type": "fixed",
+          "Size": 22.5
+        }
+      },
+      "Components": [
+        {
+          "$type": "repeatable",
+          "Size": {
+            "X": {
+              "$type": "fixed",
+              "Size": 40
+            },
+            "Y": {
+              "$type": "fixed",
+              "Size": 186
+            },
+            "Z": {
+              "$type": "fixed",
+              "Size": 20
+            }
+          },
+          "AmountX": 1,
+          "AmountY": 3,
+          "Model": {
+            "$type": "box",
+            "RoundBottom": true,
+            "Size": {
+              "X": {
+                "$type": "fixed",
+                "Size": 0
+              },
+              "Y": {
+                "$type": "fixed",
+                "Size": 0
+              },
+              "Z": {
+                "$type": "fixed",
+                "Size": 20
+              }
+            }
+          }
+        }
+      ],
+      "Location": {
+        "X": {
+          "$type": "fixed",
+          "Size": 300
+        },
+        "Y": {
+          "$type": "fixed",
+          "Size": 0
+        },
+        "Z": {
+          "$type": "fixed",
+          "Size": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "CardHolder",
+  "size": { "x": 160, "y": 100, "z": 40 },
+  "parts": [
+    {
+      "$type": "cardHolder",
+      "name": "PlainHolder",
+      "id": "f5000000-0000-4000-8000-000000000001",
+      "size": {
+        "x": { "$type": "fixed", "size": 73 },
+        "y": { "$type": "fixed", "size": 100 },
+        "z": { "$type": "computed", "expression": "55*0,65+1,2" }
+      },
+      "innerSize": {
+        "x": { "$type": "constant", "constantType": 0 },
+        "y": { "$type": "fixed", "size": 94 },
+        "z": { "$type": "computed", "expression": "55*0,65" }
+      },
+      "location": {
+        "x": { "$type": "fixed", "size": 0 },
+        "y": { "$type": "fixed", "size": 0 },
+        "z": { "$type": "fixed", "size": 0 }
+      }
+    },
+    {
+      "$type": "cardHolder",
+      "name": "LabelledStackable",
+      "id": "f5000000-0000-4000-8000-000000000002",
+      "text": "Events",
+      "textSize": 12,
+      "roundedCorners": true,
+      "stackableBottom": true,
+      "stackableTop": true,
+      "cutoutSide": 1,
+      "size": {
+        "x": { "$type": "fixed", "size": 73 },
+        "y": { "$type": "fixed", "size": 100 },
+        "z": { "$type": "fixed", "size": 24 }
+      },
+      "innerSize": {
+        "x": { "$type": "fixed", "size": 68 },
+        "y": { "$type": "fixed", "size": 94 },
+        "z": { "$type": "fixed", "size": 20 }
+      },
+      "location": {
+        "x": { "$type": "computed", "expression": "#PlainHolder.X + 4" },
+        "y": { "$type": "fixed", "size": 0 },
+        "z": { "$type": "fixed", "size": 0 }
+      }
+    }
+  ]
+}

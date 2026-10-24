@@ -1,0 +1,11 @@
+insert: AgentAvenue
+box:    170 x 120 x 32 mm
+parts:  3
+
+part                    corner (x,y,z)            size (x,y,z)              
+----------------------------------------------------------------------------
+AgentCards              (0, 0, 0)                 (98, 74, 32)              
+BlackMarket             (98, 0, 0)                (72, 120, 32)             
+Meeples                 (0, 74, 0)                (98, 46, 32)              
+
+issues: none

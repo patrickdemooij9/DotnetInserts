@@ -1,0 +1,80 @@
+{
+  "name": "Cutouts",
+  "size": { "x": 90, "y": 90, "z": 30 },
+  "parts": [
+    {
+      "$type": "box",
+      "name": "CutoutTray",
+      "id": "f2000000-0000-4000-8000-000000000001",
+      "size": {
+        "x": { "$type": "fixed", "size": 90 },
+        "y": { "$type": "fixed", "size": 90 },
+        "z": { "$type": "fixed", "size": 30 }
+      },
+      "location": {
+        "x": { "$type": "fixed", "size": 0 },
+        "y": { "$type": "fixed", "size": 0 },
+        "z": { "$type": "fixed", "size": 0 }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "name": "Well",
+          "id": "f2000000-0000-4000-8000-000000000002",
+          "size": {
+            "x": { "$type": "fixed", "size": 84 },
+            "y": { "$type": "fixed", "size": 84 },
+            "z": { "$type": "fixed", "size": 26 }
+          },
+          "location": {
+            "x": { "$type": "fixed", "size": 0 },
+            "y": { "$type": "fixed", "size": 0 },
+            "z": { "$type": "fixed", "size": 0 }
+          },
+          "verticalCutouts": {
+            "top": {
+              "$type": "horizontal",
+              "size": { "X": 30, "Y": 30, "Z": 20 },
+              "position": {
+                "x": { "$type": "fixed", "size": 0 },
+                "y": { "$type": "fixed", "size": 0 },
+                "z": { "$type": "fixed", "size": 0 }
+              },
+              "curveSize": 5
+            },
+            "left": {
+              "$type": "cube",
+              "size": { "X": 20, "Y": 20, "Z": 15 },
+              "position": {
+                "x": { "$type": "fixed", "size": 0 },
+                "y": { "$type": "fixed", "size": 0 },
+                "z": { "$type": "fixed", "size": 0 }
+              }
+            }
+          },
+          "horizontalCutouts": {
+            "right": {
+              "$type": "cube",
+              "size": { "X": 25, "Y": 25, "Z": 12 },
+              "position": {
+                "x": { "$type": "fixed", "size": 0 },
+                "y": { "$type": "fixed", "size": 0 },
+                "z": { "$type": "fixed", "size": 0 }
+              },
+              "roundRadius": 10
+            },
+            "bottom": {
+              "$type": "cube",
+              "size": { "X": 22, "Y": 22, "Z": 14 },
+              "position": {
+                "x": { "$type": "fixed", "size": 0 },
+                "y": { "$type": "fixed", "size": 0 },
+                "z": { "$type": "fixed", "size": 0 }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

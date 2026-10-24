@@ -1,0 +1,837 @@
+{
+  "type": [
+    "object",
+    "null"
+  ],
+  "properties": {
+    "Name": {
+      "type": "string"
+    },
+    "Size": {
+      "type": "object",
+      "properties": {
+        "X": {
+          "type": "number",
+          "default": 0
+        },
+        "Y": {
+          "type": "number",
+          "default": 0
+        },
+        "Z": {
+          "type": "number",
+          "default": 0
+        }
+      }
+    },
+    "Parts": {
+      "type": "array",
+      "items": {
+        "type": [
+          "object",
+          "null"
+        ],
+        "required": [
+          "$type"
+        ],
+        "anyOf": [
+          {
+            "properties": {
+              "$type": {
+                "const": "box"
+              },
+              "Id": {
+                "type": "string"
+              },
+              "Size": {
+                "type": "object",
+                "properties": {
+                  "X": {
+                    "type": "object",
+                    "required": [
+                      "$type"
+                    ],
+                    "anyOf": [
+                      {
+                        "properties": {
+                          "$type": {
+                            "const": "fixed"
+                          },
+                          "Size": {
+                            "type": "number"
+                          }
+                        },
+                        "required": [
+                          "Size"
+                        ]
+                      },
+                      {
+                        "properties": {
+                          "$type": {
+                            "const": "constant"
+                          },
+                          "ConstantType": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "ConstantType"
+                        ]
+                      },
+                      {
+                        "properties": {
+                          "$type": {
+                            "const": "parentAlign"
+                          },
+                          "AlignType": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "AlignType"
+                        ]
+                      },
+                      {
+                        "properties": {
+                          "$type": {
+                            "const": "partAlign"
+                          },
+                          "PartId": {
+                            "type": "string"
+                          },
+                          "AlignType": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "PartId",
+                          "AlignType"
+                        ]
+                      }
+                    ]
+                  },
+                  "Y": {
+                    "type": "object",
+                    "required": [
+                      "$type"
+                    ],
+                    "anyOf": [
+                      {
+                        "properties": {
+                          "$type": {
+                            "const": "fixed"
+                          },
+                          "Size": {
+                            "type": "number"
+                          }
+                        },
+                        "required": [
+                          "Size"
+                        ]
+                      },
+                      {
+                        "properties": {
+                          "$type": {
+                            "const": "constant"
+                          },
+                          "ConstantType": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "ConstantType"
+                        ]
+                      },
+                      {
+                        "properties": {
+                          "$type": {
+                            "const": "parentAlign"
+                          },
+                          "AlignType": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "AlignType"
+                        ]
+                      },
+                      {
+                        "properties": {
+                          "$type": {
+                            "const": "partAlign"
+                          },
+                          "PartId": {
+                            "type": "string"
+                          },
+                          "AlignType": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "PartId",
+                          "AlignType"
+                        ]
+                      }
+                    ]
+                  },
+                  "Z": {
+                    "type": "object",
+                    "required": [
+                      "$type"
+                    ],
+                    "anyOf": [
+                      {
+                        "properties": {
+                          "$type": {
+                            "const": "fixed"
+                          },
+                          "Size": {
+                            "type": "number"
+                          }
+                        },
+                        "required": [
+                          "Size"
+                        ]
+                      },
+                      {
+                        "properties": {
+                          "$type": {
+                            "const": "constant"
+                          },
+                          "ConstantType": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "ConstantType"
+                        ]
+                      },
+                      {
+                        "properties": {
+                          "$type": {
+                            "const": "parentAlign"
+                          },
+                          "AlignType": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "AlignType"
+                        ]
+                      },
+                      {
+                        "properties": {
+                          "$type": {
+                            "const": "partAlign"
+                          },
+                          "PartId": {
+                            "type": "string"
+                          },
+                          "AlignType": {
+                            "type": "integer"
+                          }
+                        },
+                        "required": [
+                          "PartId",
+                          "AlignType"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "X",
+                  "Y",
+                  "Z"
+                ]
+              },
+              "Components": {
+                "type": "array",
+                "items": {
+                  "type": [
+                    "object",
+                    "null"
+                  ],
+                  "required": [
+                    "$type"
+                  ],
+                  "anyOf": [
+                    {
+                      "properties": {
+                        "$type": {
+                          "const": "box"
+                        },
+                        "Size": {
+                          "type": "object",
+                          "properties": {
+                            "X": {
+                              "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/X"
+                            },
+                            "Y": {
+                              "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/Y"
+                            },
+                            "Z": {
+                              "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/Z"
+                            }
+                          },
+                          "required": [
+                            "X",
+                            "Y",
+                            "Z"
+                          ]
+                        },
+                        "Location": {
+                          "type": "object",
+                          "properties": {
+                            "X": {
+                              "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/X"
+                            },
+                            "Y": {
+                              "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/Y"
+                            },
+                            "Z": {
+                              "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/Z"
+                            }
+                          },
+                          "required": [
+                            "X",
+                            "Y",
+                            "Z"
+                          ]
+                        },
+                        "HorizontalCutouts": {
+                          "type": [
+                            "object",
+                            "null"
+                          ],
+                          "properties": {
+                            "Top": {
+                              "type": [
+                                "object",
+                                "null"
+                              ],
+                              "required": [
+                                "$type"
+                              ],
+                              "anyOf": [
+                                {
+                                  "properties": {
+                                    "$type": {
+                                      "const": "cube"
+                                    },
+                                    "Size": {
+                                      "type": "object",
+                                      "properties": {
+                                        "X": {
+                                          "type": "number",
+                                          "default": 0
+                                        },
+                                        "Y": {
+                                          "type": "number",
+                                          "default": 0
+                                        },
+                                        "Z": {
+                                          "type": "number",
+                                          "default": 0
+                                        }
+                                      }
+                                    },
+                                    "Position": {
+                                      "type": [
+                                        "object",
+                                        "null"
+                                      ],
+                                      "properties": {
+                                        "X": {
+                                          "type": "number",
+                                          "default": 0
+                                        },
+                                        "Y": {
+                                          "type": "number",
+                                          "default": 0
+                                        },
+                                        "Z": {
+                                          "type": "number",
+                                          "default": 0
+                                        }
+                                      }
+                                    },
+                                    "RoundRadius": {
+                                      "type": [
+                                        "number",
+                                        "null"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "Size"
+                                  ]
+                                },
+                                {
+                                  "properties": {
+                                    "$type": {
+                                      "const": "horizontal"
+                                    },
+                                    "Size": {
+                                      "type": "object",
+                                      "properties": {
+                                        "X": {
+                                          "type": "number",
+                                          "default": 0
+                                        },
+                                        "Y": {
+                                          "type": "number",
+                                          "default": 0
+                                        },
+                                        "Z": {
+                                          "type": "number",
+                                          "default": 0
+                                        }
+                                      }
+                                    },
+                                    "CurveSize": {
+                                      "type": "number"
+                                    }
+                                  },
+                                  "required": [
+                                    "Size",
+                                    "CurveSize"
+                                  ]
+                                }
+                              ]
+                            },
+                            "Right": {
+                              "type": [
+                                "object",
+                                "null"
+                              ],
+                              "required": [
+                                "$type"
+                              ],
+                              "anyOf": [
+                                {
+                                  "properties": {
+                                    "$type": {
+                                      "const": "cube"
+                                    },
+                                    "Size": {
+                                      "$ref": "#/properties/Parts/items/anyOf/0/properties/Components/items/anyOf/0/properties/HorizontalCutouts/properties/Top/anyOf/0/properties/Size"
+                                    },
+                                    "Position": {
+                                      "$ref": "#/properties/Parts/items/anyOf/0/properties/Components/items/anyOf/0/properties/HorizontalCutouts/properties/Top/anyOf/0/properties/Position"
+                                    },
+                                    "RoundRadius": {
+                                      "type": [
+                                        "number",
+                                        "null"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "Size"
+                                  ]
+                                },
+                                {
+                                  "properties": {
+                                    "$type": {
+                                      "const": "horizontal"
+                                    },
+                                    "Size": {
+                                      "$ref": "#/properties/Parts/items/anyOf/0/properties/Components/items/anyOf/0/properties/HorizontalCutouts/properties/Top/anyOf/1/properties/Size"
+                                    },
+                                    "CurveSize": {
+                                      "type": "number"
+                                    }
+                                  },
+                                  "required": [
+                                    "Size",
+                                    "CurveSize"
+                                  ]
+                                }
+                              ]
+                            },
+                            "Bottom": {
+                              "type": [
+                                "object",
+                                "null"
+                              ],
+                              "required": [
+                                "$type"
+                              ],
+                              "anyOf": [
+                                {
+                                  "properties": {
+                                    "$type": {
+                                      "const": "cube"
+                                    },
+                                    "Size": {
+                                      "$ref": "#/properties/Parts/items/anyOf/0/properties/Components/items/anyOf/0/properties/HorizontalCutouts/properties/Top/anyOf/0/properties/Size"
+                                    },
+                                    "Position": {
+                                      "$ref": "#/properties/Parts/items/anyOf/0/properties/Components/items/anyOf/0/properties/HorizontalCutouts/properties/Top/anyOf/0/properties/Position"
+                                    },
+                                    "RoundRadius": {
+                                      "type": [
+                                        "number",
+                                        "null"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "Size"
+                                  ]
+                                },
+                                {
+                                  "properties": {
+                                    "$type": {
+                                      "const": "horizontal"
+                                    },
+                                    "Size": {
+                                      "$ref": "#/properties/Parts/items/anyOf/0/properties/Components/items/anyOf/0/properties/HorizontalCutouts/properties/Top/anyOf/1/properties/Size"
+                                    },
+                                    "CurveSize": {
+                                      "type": "number"
+                                    }
+                                  },
+                                  "required": [
+                                    "Size",
+                                    "CurveSize"
+                                  ]
+                                }
+                              ]
+                            },
+                            "Left": {
+                              "type": [
+                                "object",
+                                "null"
+                              ],
+                              "required": [
+                                "$type"
+                              ],
+                              "anyOf": [
+                                {
+                                  "properties": {
+                                    "$type": {
+                                      "const": "cube"
+                                    },
+                                    "Size": {
+                                      "$ref": "#/properties/Parts/items/anyOf/0/properties/Components/items/anyOf/0/properties/HorizontalCutouts/properties/Top/anyOf/0/properties/Size"
+                                    },
+                                    "Position": {
+                                      "$ref": "#/properties/Parts/items/anyOf/0/properties/Components/items/anyOf/0/properties/HorizontalCutouts/properties/Top/anyOf/0/properties/Position"
+                                    },
+                                    "RoundRadius": {
+                                      "type": [
+                                        "number",
+                                        "null"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "Size"
+                                  ]
+                                },
+                                {
+                                  "properties": {
+                                    "$type": {
+                                      "const": "horizontal"
+                                    },
+                                    "Size": {
+                                      "$ref": "#/properties/Parts/items/anyOf/0/properties/Components/items/anyOf/0/properties/HorizontalCutouts/properties/Top/anyOf/1/properties/Size"
+                                    },
+                                    "CurveSize": {
+                                      "type": "number"
+                                    }
+                                  },
+                                  "required": [
+                                    "Size",
+                                    "CurveSize"
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        "VerticalCutouts": {
+                          "type": [
+                            "object",
+                            "null"
+                          ],
+                          "properties": {
+                            "Top": {
+                              "$ref": "#/properties/Parts/items/anyOf/0/properties/Components/items/anyOf/0/properties/HorizontalCutouts/properties/Top"
+                            },
+                            "Right": {
+                              "$ref": "#/properties/Parts/items/anyOf/0/properties/Components/items/anyOf/0/properties/HorizontalCutouts/properties/Right"
+                            },
+                            "Bottom": {
+                              "$ref": "#/properties/Parts/items/anyOf/0/properties/Components/items/anyOf/0/properties/HorizontalCutouts/properties/Bottom"
+                            },
+                            "Left": {
+                              "$ref": "#/properties/Parts/items/anyOf/0/properties/Components/items/anyOf/0/properties/HorizontalCutouts/properties/Left"
+                            }
+                          }
+                        },
+                        "RoundBottom": {
+                          "type": "boolean"
+                        }
+                      },
+                      "required": [
+                        "Size"
+                      ]
+                    },
+                    {
+                      "properties": {
+                        "$type": {
+                          "const": "repeatable"
+                        },
+                        "AmountX": {
+                          "type": "integer"
+                        },
+                        "AmountY": {
+                          "type": "integer"
+                        },
+                        "Model": {
+                          "type": "object",
+                          "required": [
+                            "$type"
+                          ],
+                          "anyOf": [
+                            {
+                              "properties": {
+                                "$type": {
+                                  "const": "box"
+                                },
+                                "Size": {
+                                  "$ref": "#/properties/Parts/items/anyOf/0/properties/Components/items/anyOf/0/properties/Size"
+                                },
+                                "Location": {
+                                  "$ref": "#/properties/Parts/items/anyOf/0/properties/Components/items/anyOf/0/properties/Location"
+                                },
+                                "HorizontalCutouts": {
+                                  "$ref": "#/properties/Parts/items/anyOf/0/properties/Components/items/anyOf/0/properties/HorizontalCutouts"
+                                },
+                                "VerticalCutouts": {
+                                  "$ref": "#/properties/Parts/items/anyOf/0/properties/Components/items/anyOf/0/properties/VerticalCutouts"
+                                },
+                                "RoundBottom": {
+                                  "type": "boolean"
+                                }
+                              },
+                              "required": [
+                                "Size"
+                              ]
+                            },
+                            {
+                              "properties": {
+                                "$type": {
+                                  "const": "repeatable"
+                                },
+                                "AmountX": {
+                                  "type": "integer"
+                                },
+                                "AmountY": {
+                                  "type": "integer"
+                                },
+                                "Model": {
+                                  "$ref": "#/properties/Parts/items/anyOf/0/properties/Components/items/anyOf/1/properties/Model"
+                                },
+                                "Size": {
+                                  "type": "object",
+                                  "properties": {
+                                    "X": {
+                                      "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/X"
+                                    },
+                                    "Y": {
+                                      "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/Y"
+                                    },
+                                    "Z": {
+                                      "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/Z"
+                                    }
+                                  },
+                                  "required": [
+                                    "X",
+                                    "Y",
+                                    "Z"
+                                  ]
+                                },
+                                "Location": {
+                                  "type": "object",
+                                  "properties": {
+                                    "X": {
+                                      "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/X"
+                                    },
+                                    "Y": {
+                                      "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/Y"
+                                    },
+                                    "Z": {
+                                      "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/Z"
+                                    }
+                                  },
+                                  "required": [
+                                    "X",
+                                    "Y",
+                                    "Z"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "AmountX",
+                                "AmountY",
+                                "Model",
+                                "Size"
+                              ]
+                            }
+                          ]
+                        },
+                        "Size": {
+                          "$ref": "#/properties/Parts/items/anyOf/0/properties/Components/items/anyOf/1/properties/Model/anyOf/1/properties/Size"
+                        },
+                        "Location": {
+                          "$ref": "#/properties/Parts/items/anyOf/0/properties/Components/items/anyOf/1/properties/Model/anyOf/1/properties/Location"
+                        }
+                      },
+                      "required": [
+                        "AmountX",
+                        "AmountY",
+                        "Model",
+                        "Size"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "Location": {
+                "type": "object",
+                "properties": {
+                  "X": {
+                    "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/X"
+                  },
+                  "Y": {
+                    "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/Y"
+                  },
+                  "Z": {
+                    "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/Z"
+                  }
+                },
+                "required": [
+                  "X",
+                  "Y",
+                  "Z"
+                ]
+              },
+              "RoundRadius": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "Id",
+              "Size",
+              "Components"
+            ]
+          },
+          {
+            "properties": {
+              "$type": {
+                "const": "cardHolder"
+              },
+              "Id": {
+                "type": "string"
+              },
+              "Size": {
+                "type": "object",
+                "properties": {
+                  "X": {
+                    "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/X"
+                  },
+                  "Y": {
+                    "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/Y"
+                  },
+                  "Z": {
+                    "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/Z"
+                  }
+                },
+                "required": [
+                  "X",
+                  "Y",
+                  "Z"
+                ]
+              },
+              "InnerSize": {
+                "type": "object",
+                "properties": {
+                  "X": {
+                    "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/X"
+                  },
+                  "Y": {
+                    "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/Y"
+                  },
+                  "Z": {
+                    "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/Z"
+                  }
+                },
+                "required": [
+                  "X",
+                  "Y",
+                  "Z"
+                ]
+              },
+              "CutoutSide": {
+                "type": "integer"
+              },
+              "RoundedCorners": {
+                "type": "boolean"
+              },
+              "Text": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "TextSize": {
+                "type": "integer"
+              },
+              "StackableBottom": {
+                "type": "boolean"
+              },
+              "StackableTop": {
+                "type": "boolean"
+              },
+              "Location": {
+                "type": "object",
+                "properties": {
+                  "X": {
+                    "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/X"
+                  },
+                  "Y": {
+                    "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/Y"
+                  },
+                  "Z": {
+                    "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/Z"
+                  }
+                },
+                "required": [
+                  "X",
+                  "Y",
+                  "Z"
+                ]
+              }
+            },
+            "required": [
+              "Id",
+              "Size",
+              "InnerSize"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "Name",
+    "Size"
+  ]
+}

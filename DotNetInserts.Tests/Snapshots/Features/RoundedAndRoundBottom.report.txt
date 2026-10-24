@@ -1,0 +1,9 @@
+insert: RoundedAndRoundBottom
+box:    60 x 60 x 25 mm
+parts:  1
+
+part                    corner (x,y,z)            size (x,y,z)              
+----------------------------------------------------------------------------
+Rounded                 (0, 0, 0)                 (60, 60, 25)              
+
+issues: none

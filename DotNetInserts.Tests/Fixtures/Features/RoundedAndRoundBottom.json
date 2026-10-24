@@ -1,0 +1,40 @@
+{
+  "name": "RoundedAndRoundBottom",
+  "size": { "x": 60, "y": 60, "z": 25 },
+  "parts": [
+    {
+      "$type": "box",
+      "name": "Rounded",
+      "id": "f1000000-0000-4000-8000-000000000001",
+      "roundRadius": 4,
+      "size": {
+        "x": { "$type": "fixed", "size": 60 },
+        "y": { "$type": "fixed", "size": 60 },
+        "z": { "$type": "fixed", "size": 25 }
+      },
+      "location": {
+        "x": { "$type": "fixed", "size": 0 },
+        "y": { "$type": "fixed", "size": 0 },
+        "z": { "$type": "fixed", "size": 0 }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "name": "ScoopedWell",
+          "id": "f1000000-0000-4000-8000-000000000002",
+          "roundBottom": true,
+          "size": {
+            "x": { "$type": "fixed", "size": 52 },
+            "y": { "$type": "fixed", "size": 52 },
+            "z": { "$type": "fixed", "size": 22 }
+          },
+          "location": {
+            "x": { "$type": "fixed", "size": 0 },
+            "y": { "$type": "fixed", "size": 0 },
+            "z": { "$type": "fixed", "size": 0 }
+          }
+        }
+      ]
+    }
+  ]
+}

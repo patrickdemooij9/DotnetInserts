@@ -1,0 +1,115 @@
+{
+  "name": "Alignment",
+  "size": { "x": 200, "y": 100, "z": 30 },
+  "parts": [
+    {
+      "$type": "box",
+      "name": "Anchor",
+      "id": "f5000000-0000-4000-8000-000000000001",
+      "size": {
+        "x": { "$type": "fixed", "size": 60 },
+        "y": { "$type": "fixed", "size": 40 },
+        "z": { "$type": "fixed", "size": 20 }
+      },
+      "location": {
+        "x": { "$type": "fixed", "size": 0 },
+        "y": { "$type": "fixed", "size": 0 },
+        "z": { "$type": "fixed", "size": 0 }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "name": "WellA",
+          "id": "f5000000-0000-4000-8000-000000000002",
+          "size": {
+            "x": { "$type": "fixed", "size": 20 },
+            "y": { "$type": "fixed", "size": 20 },
+            "z": { "$type": "fixed", "size": 16 }
+          },
+          "location": {
+            "x": { "$type": "parentAlign", "alignType": 3, "gap": 3 },
+            "y": { "$type": "fixed", "size": 0 },
+            "z": { "$type": "fixed", "size": 0 }
+          }
+        },
+        {
+          "$type": "box",
+          "name": "WellB",
+          "id": "f5000000-0000-4000-8000-000000000003",
+          "size": {
+            "x": { "$type": "fixed", "size": 14 },
+            "y": { "$type": "fixed", "size": 20 },
+            "z": { "$type": "fixed", "size": 16 }
+          },
+          "location": {
+            "x": {
+              "$type": "componentAlign",
+              "componentId": "f5000000-0000-4000-8000-000000000002",
+              "alignType": 1,
+              "gap": 2
+            },
+            "y": {
+              "$type": "componentAlign",
+              "componentId": "f5000000-0000-4000-8000-000000000002",
+              "alignType": 1,
+              "gap": 2
+            },
+            "z": { "$type": "fixed", "size": 0 }
+          }
+        }
+      ]
+    },
+    {
+      "$type": "box",
+      "name": "RightOfAnchor",
+      "id": "f5000000-0000-4000-8000-000000000004",
+      "size": {
+        "x": { "$type": "fixed", "size": 40 },
+        "y": { "$type": "fixed", "size": 40 },
+        "z": { "$type": "fixed", "size": 20 }
+      },
+      "location": {
+        "x": {
+          "$type": "partAlign",
+          "partId": "f5000000-0000-4000-8000-000000000001",
+          "alignType": 1,
+          "gap": 5
+        },
+        "y": {
+          "$type": "partAlign",
+          "partId": "f5000000-0000-4000-8000-000000000001",
+          "alignType": 1,
+          "gap": 5
+        },
+        "z": { "$type": "fixed", "size": 0 }
+      },
+      "components": []
+    },
+    {
+      "$type": "box",
+      "name": "AboveRightOfAnchor",
+      "id": "f5000000-0000-4000-8000-000000000005",
+      "size": {
+        "x": { "$type": "fixed", "size": 30 },
+        "y": { "$type": "fixed", "size": 30 },
+        "z": { "$type": "fixed", "size": 20 }
+      },
+      "location": {
+        "x": {
+          "$type": "partAlign",
+          "partId": "f5000000-0000-4000-8000-000000000004",
+          "alignType": 0,
+          "gap": 4
+        },
+        "y": {
+          "$type": "partAlign",
+          "partId": "f5000000-0000-4000-8000-000000000004",
+          "alignType": 0,
+          "gap": 4
+        },
+        "z": { "$type": "fixed", "size": 0 }
+      },
+      "components": []
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "name": "SvgImage",
+  "size": { "x": 100, "y": 80, "z": 30 },
+  "parts": [
+    {
+      "$type": "box",
+      "name": "Tray",
+      "id": "f1000000-0000-4000-8000-000000000001",
+      "size": {
+        "x": { "$type": "fixed", "size": 100 },
+        "y": { "$type": "fixed", "size": 80 },
+        "z": { "$type": "fixed", "size": 30 }
+      },
+      "location": {
+        "x": { "$type": "fixed", "size": 0 },
+        "y": { "$type": "fixed", "size": 0 },
+        "z": { "$type": "fixed", "size": 0 }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "name": "Well",
+          "id": "f1000000-0000-4000-8000-000000000002",
+          "size": {
+            "x": { "$type": "fixed", "size": 80 },
+            "y": { "$type": "fixed", "size": 60 },
+            "z": { "$type": "computed", "expression": "#Tray.Z-2" }
+          },
+          "location": {
+            "x": { "$type": "fixed", "size": 0 },
+            "y": { "$type": "fixed", "size": 0 },
+            "z": { "$type": "fixed", "size": 0 }
+          }
+        },
+        {
+          "$type": "svg",
+          "name": "Underside",
+          "id": "f1000000-0000-4000-8000-000000000003",
+          "imagePath": "Logo.svg",
+          "mirrored": true,
+          "size": {
+            "x": { "$type": "fixed", "size": 40 },
+            "y": { "$type": "fixed", "size": 20 },
+            "z": { "$type": "fixed", "size": 0.6 }
+          },
+          "location": {
+            "x": { "$type": "fixed", "size": 0 },
+            "y": { "$type": "fixed", "size": 0 },
+            "z": { "$type": "fixed", "size": 0 }
+          }
+        },
+        {
+          "$type": "svg",
+          "name": "WellFloor",
+          "id": "f1000000-0000-4000-8000-000000000004",
+          "imagePath": "Logo.svg",
+          "size": {
+            "x": { "$type": "fixed", "size": 30 },
+            "y": { "$type": "fixed", "size": 15 },
+            "z": { "$type": "fixed", "size": 0.4 }
+          },
+          "location": {
+            "x": { "$type": "fixed", "size": 0 },
+            "y": { "$type": "fixed", "size": 0 },
+            "z": { "$type": "computed", "expression": "#Tray.Z-#Tray.Well.Z-0,4" }
+          }
+        },
+        {
+          "$type": "svg",
+          "name": "RimMark",
+          "id": "f1000000-0000-4000-8000-000000000005",
+          "imagePath": "Mark.svg",
+          "anchor": "top",
+          "export": false,
+          "size": {
+            "x": { "$type": "fixed", "size": 8 },
+            "y": { "$type": "fixed", "size": 8 },
+            "z": { "$type": "fixed", "size": 0.4 }
+          },
+          "location": {
+            "x": { "$type": "fixed", "size": 45 },
+            "y": { "$type": "fixed", "size": 0 },
+            "z": { "$type": "fixed", "size": 0 }
+          }
+        }
+      ]
+    }
+  ]
+}

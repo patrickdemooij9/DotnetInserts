@@ -1,0 +1,106 @@
+{
+  "name": "Labels",
+  "size": { "x": 250, "y": 110, "z": 30 },
+  "parts": [
+    {
+      "$type": "box",
+      "name": "AllFourWalls",
+      "id": "1a000000-0000-4000-8000-000000000001",
+      "size": {
+        "x": { "$type": "fixed", "size": 90 },
+        "y": { "$type": "fixed", "size": 70 },
+        "z": { "$type": "fixed", "size": 25 }
+      },
+      "location": {
+        "x": { "$type": "fixed", "size": 0 },
+        "y": { "$type": "fixed", "size": 0 },
+        "z": { "$type": "fixed", "size": 0 }
+      },
+      "labels": [
+        { "text": "FRONT", "side": "bottom", "size": 8, "depth": 0.6 },
+        { "text": "BACK", "side": "top", "size": 8, "depth": 0.6 },
+        { "text": "LEFT", "side": "left", "size": 6, "depth": 0.6 },
+        { "text": "RIGHT", "side": "right", "size": 6, "depth": 0.6 }
+      ],
+      "components": [
+        {
+          "$type": "box",
+          "name": "Well",
+          "id": "1a000000-0000-4000-8000-000000000002",
+          "size": {
+            "x": { "$type": "fixed", "size": 84 },
+            "y": { "$type": "fixed", "size": 64 },
+            "z": { "$type": "fixed", "size": 23 }
+          },
+          "location": {
+            "x": { "$type": "fixed", "size": 0 },
+            "y": { "$type": "fixed", "size": 0 },
+            "z": { "$type": "fixed", "size": 0 }
+          }
+        }
+      ]
+    },
+    {
+      "$type": "box",
+      "name": "NudgedAndDeep",
+      "id": "1a000000-0000-4000-8000-000000000003",
+      "size": {
+        "x": { "$type": "fixed", "size": 70 },
+        "y": { "$type": "fixed", "size": 70 },
+        "z": { "$type": "fixed", "size": 25 }
+      },
+      "location": {
+        "x": { "$type": "computed", "expression": "#AllFourWalls.X + 6" },
+        "y": { "$type": "fixed", "size": 0 },
+        "z": { "$type": "fixed", "size": 0 }
+      },
+      "labels": [
+        { "text": "LOW", "side": "bottom", "size": 7, "depth": 1.2, "up": -7 },
+        { "text": "R", "side": "bottom", "size": 7, "depth": 0.6, "along": 24, "up": 6 }
+      ],
+      "components": [
+        {
+          "$type": "box",
+          "name": "Well",
+          "id": "1a000000-0000-4000-8000-000000000004",
+          "size": {
+            "x": { "$type": "fixed", "size": 64 },
+            "y": { "$type": "fixed", "size": 64 },
+            "z": { "$type": "fixed", "size": 23 }
+          },
+          "location": {
+            "x": { "$type": "fixed", "size": 0 },
+            "y": { "$type": "fixed", "size": 0 },
+            "z": { "$type": "fixed", "size": 0 }
+          }
+        }
+      ]
+    },
+    {
+      "$type": "cardHolder",
+      "name": "HolderWithBoth",
+      "id": "1a000000-0000-4000-8000-000000000005",
+      "text": "Floor",
+      "textSize": 10,
+      "roundedCorners": true,
+      "labels": [
+        { "text": "SIDE", "side": "right", "size": 8, "depth": 0.6, "up": 4 }
+      ],
+      "size": {
+        "x": { "$type": "fixed", "size": 73 },
+        "y": { "$type": "fixed", "size": 100 },
+        "z": { "$type": "fixed", "size": 24 }
+      },
+      "innerSize": {
+        "x": { "$type": "fixed", "size": 68 },
+        "y": { "$type": "fixed", "size": 94 },
+        "z": { "$type": "fixed", "size": 20 }
+      },
+      "location": {
+        "x": { "$type": "computed", "expression": "#AllFourWalls.X + #NudgedAndDeep.X + 12" },
+        "y": { "$type": "fixed", "size": 0 },
+        "z": { "$type": "fixed", "size": 0 }
+      }
+    }
+  ]
+}

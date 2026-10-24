@@ -1,0 +1,18 @@
+insert: AnimalRescueTeam
+box:    ? x ? x ? mm   (? = not declared, fit not checked on that axis)
+parts:  10
+
+part                    corner (x,y,z)            size (x,y,z)              
+----------------------------------------------------------------------------
+Vehicles                (0, 0, 0)                 (212, 80, 4)              
+RescueCards             (0, 80, 0)                (70.6, 96, 39)            
+MissionCards            (70.6, 80, 0)             (70.6, 96, 19.5)          
+EventCards              (70.6, 80, 19.5)          (70.6, 96, 19.5)          
+SpecialistCards         (141.33, 80, 0)           (70.6, 96, 19.5)          
+LogisticCards           (141.33, 80, 19.5)        (70.6, 96, 19.5)          
+Animals                 (0, 176, 0)               (212, 50, 19.5)           
+LargerAnimals           (0, 226, 0)               (212, 71, 28)             
+RoundTokens             (0, 176, 19.5)            (212, 50, 19.5)           
+OtherTokens             (0, 226, 28)              (212, 71, 11)             
+
+issues: none

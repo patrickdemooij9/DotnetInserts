@@ -1,0 +1,19 @@
+insert: Deckers
+box:    190 x 190 x 70 mm
+parts:  9
+
+part                    corner (x,y,z)            size (x,y,z)              
+----------------------------------------------------------------------------
+DeckerCards             (0, 0, 0)                 (56, 98, 69.2)            
+AdvancedCommands        (56, 0, 0)                (64.65, 98, 69.2)         
+Objectives              (120.65, 0, 0)            (49, 98, 69.2)            
+Others                  (169.65, 0, 0)            (18.35, 98, 69.2)         
+Players                 (0, -100, 0)              (188, 92, 22)             
+BigCards                (0, -100, 22)             (188, 92, 17)             
+Tokens                  (0, -100, 39)             (188, 92, 30.2)           
+InnerTokens             (50, -98, 40.2)           (138, 41, 28)             
+InnerTokens2            (50, -45, 40.2)           (138, 41, 28)             
+
+issues: 2
+  [Nested] InnerTokens sits inside Tokens
+  [Overlap] Tokens <-> InnerTokens2: overlap 138 x 37 x 28 mm

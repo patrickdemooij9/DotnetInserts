@@ -1,0 +1,2146 @@
+{
+  "name": "Deckers",
+  "size": {
+    "x": 190,
+    "y": 190,
+    "z": 70
+  },
+  "parts": [
+    {
+      "$type": "box",
+      "name": "DeckerCards",
+      "id": "2f7c5ab6-f40e-4251-8ac0-5af6852b0558",
+      "size": {
+        "x": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "80*0,65+2*2"
+        },
+        "y": {
+          "$type": "computed",
+          "expression": "94+2*2"
+        },
+        "z": {
+          "$type": "computed",
+          "size": 94,
+          "expression": "68+1,2"
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "id": "4ffccfc8-ccb0-4ce9-b569-03f34812a26f",
+          "name": "Inner",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#DeckerCards.X-2*2"
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "94"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "68"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "verticalCutouts": {
+            "right": {
+              "$type": "horizontal",
+              "size": {
+                "X": 50,
+                "Y": 400,
+                "Z": 50
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 100
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "curveSize": 5
+            }
+          }
+        }
+      ],
+      "roundRadius": 8
+    },
+    {
+      "$type": "box",
+      "name": "AdvancedCommands",
+      "id": "c2511091-21db-45bc-a8d8-55e59257b581",
+      "size": {
+        "x": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "81*0,65+2*6"
+        },
+        "y": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#DeckerCards.Y"
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#DeckerCards.Z"
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#DeckerCards.X"
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      },
+      "components": [
+        {
+          "$type": "repeatable",
+          "id": "ca6c2eca-f02c-4bd5-ac88-010cb7c7e047",
+          "name": "Inner",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": 750.65,
+              "expression": "#AdvancedCommands.X-2*2"
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 94
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 68
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "amountX": 5,
+          "amountY": 1,
+          "model": {
+            "$type": "box",
+            "id": "0d403659-e80a-4850-a7f2-8f2cda35d97d",
+            "name": "New Component",
+            "size": {
+              "x": {
+                "$type": "computed",
+                "size": 0,
+                "expression": "15*0,65"
+              },
+              "y": {
+                "$type": "fixed",
+                "size": 94
+              },
+              "z": {
+                "$type": "fixed",
+                "size": 68
+              }
+            },
+            "location": {
+              "x": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "y": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "z": {
+                "$type": "fixed",
+                "size": 0
+              }
+            },
+            "verticalCutouts": {
+              "right": {
+                "$type": "horizontal",
+                "size": {
+                  "X": 50,
+                  "Y": 100,
+                  "Z": 50
+                },
+                "position": {
+                  "x": {
+                    "$type": "fixed",
+                    "size": 0
+                  },
+                  "y": {
+                    "$type": "fixed",
+                    "size": 50
+                  },
+                  "z": {
+                    "$type": "fixed",
+                    "size": 0
+                  }
+                },
+                "curveSize": 5
+              }
+            }
+          }
+        }
+      ],
+      "roundRadius": 8
+    },
+    {
+      "$type": "box",
+      "name": "Objectives",
+      "id": "b2e618ec-840f-4c66-bcc5-a6cfe809e3d0",
+      "size": {
+        "x": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "60*0,65+2*5"
+        },
+        "y": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#DeckerCards.Y"
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#DeckerCards.Z"
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#DeckerCards.X+#AdvancedCommands.X"
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "id": "6a1f08c0-1242-462b-921d-f1d79b1b6d50",
+          "name": "MotherGhost",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": 4,
+              "expression": "8*0,65"
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 94
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 68
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 2
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "repeatable",
+          "id": "dd4462cb-a5a6-451b-8120-0ddc26d006af",
+          "name": "Cards",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "52*0,65+2*2"
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 94
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 68
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 1,
+              "gap": 2
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "amountX": 3,
+          "amountY": 1,
+          "model": {
+            "$type": "box",
+            "id": "9409c3b2-2343-4460-aecd-929e44c6301c",
+            "name": "New Component",
+            "size": {
+              "x": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "y": {
+                "$type": "fixed",
+                "size": 94
+              },
+              "z": {
+                "$type": "fixed",
+                "size": 68
+              }
+            },
+            "location": {
+              "x": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "y": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "z": {
+                "$type": "fixed",
+                "size": 0
+              }
+            },
+            "verticalCutouts": {
+              "right": {
+                "$type": "horizontal",
+                "size": {
+                  "X": 50,
+                  "Y": 100,
+                  "Z": 50
+                },
+                "position": {
+                  "x": {
+                    "$type": "fixed",
+                    "size": 0
+                  },
+                  "y": {
+                    "$type": "fixed",
+                    "size": 50
+                  },
+                  "z": {
+                    "$type": "fixed",
+                    "size": 0
+                  }
+                },
+                "curveSize": 5
+              }
+            }
+          }
+        }
+      ],
+      "roundRadius": 8
+    },
+    {
+      "$type": "box",
+      "name": "Others",
+      "id": "ceb51af2-1408-4bd1-88e3-8028a92b4025",
+      "size": {
+        "x": {
+          "$type": "computed",
+          "expression": "19*0,65+2*3"
+        },
+        "y": {
+          "$type": "computed",
+          "size": 94,
+          "expression": "#DeckerCards.Y"
+        },
+        "z": {
+          "$type": "computed",
+          "expression": "#DeckerCards.Z"
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#DeckerCards.X+#AdvancedCommands.X+#Objectives.X"
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      },
+      "components": [
+        {
+          "$type": "repeatable",
+          "id": "918c7583-a399-4f37-a622-b8b07f724e56",
+          "name": "New Component",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "expression": "#Others.X-2*2"
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 94
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 68
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "amountX": 2,
+          "amountY": 1,
+          "model": {
+            "$type": "box",
+            "id": "3b43b44f-41e9-42df-b77c-539d009900ef",
+            "name": "New Component",
+            "size": {
+              "x": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "y": {
+                "$type": "fixed",
+                "size": 94
+              },
+              "z": {
+                "$type": "fixed",
+                "size": 68
+              }
+            },
+            "location": {
+              "x": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "y": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "z": {
+                "$type": "fixed",
+                "size": 0
+              }
+            },
+            "verticalCutouts": {
+              "right": {
+                "$type": "horizontal",
+                "size": {
+                  "X": 50,
+                  "Y": 100,
+                  "Z": 50
+                },
+                "position": {
+                  "x": {
+                    "$type": "fixed",
+                    "size": 0
+                  },
+                  "y": {
+                    "$type": "fixed",
+                    "size": 50
+                  },
+                  "z": {
+                    "$type": "fixed",
+                    "size": 0
+                  }
+                },
+                "curveSize": 5
+              }
+            }
+          }
+        }
+      ],
+      "roundRadius": 8
+    },
+    {
+      "$type": "box",
+      "name": "Players",
+      "id": "83507869-963a-46b0-9f2d-a0c8a69ea58d",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 188
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 92
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 22
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "y": {
+          "$type": "fixed",
+          "size": -100
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "id": "db799366-ba49-4d37-8515-e6fa7d735d5c",
+          "name": "Standee 1",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 27
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 52
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 13
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": -15
+            },
+            "y": {
+              "$type": "fixed",
+              "size": -14
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "horizontalCutouts": {
+            "top": {
+              "$type": "cube",
+              "size": {
+                "X": 19,
+                "Y": 14,
+                "Z": 10
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": -4
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              }
+            },
+            "bottom": {
+              "$type": "cube",
+              "size": {
+                "X": 19,
+                "Y": 14,
+                "Z": 10
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 4
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              }
+            },
+            "right": {
+              "$type": "cube",
+              "size": {
+                "X": 25,
+                "Y": 20,
+                "Z": 3
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 20
+            },
+            "left": {
+              "$type": "cube",
+              "size": {
+                "X": 25,
+                "Y": 20,
+                "Z": 3
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 20
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "6d33dce5-7bb3-47e5-9dda-8c97ecae75f0",
+          "name": "Ghost1",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 25
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 25
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 2.5
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 30
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "1eb9fff1-1e9d-42d2-95a6-536a1e123766",
+          "name": "Standee 2",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 27
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 52
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 13
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": -45
+            },
+            "y": {
+              "$type": "fixed",
+              "size": -14
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "horizontalCutouts": {
+            "top": {
+              "$type": "cube",
+              "size": {
+                "X": 19,
+                "Y": 14,
+                "Z": 10
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": -4
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              }
+            },
+            "bottom": {
+              "$type": "cube",
+              "size": {
+                "X": 19,
+                "Y": 14,
+                "Z": 10
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 4
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              }
+            },
+            "right": {
+              "$type": "cube",
+              "size": {
+                "X": 25,
+                "Y": 20,
+                "Z": 3
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 20
+            },
+            "left": {
+              "$type": "cube",
+              "size": {
+                "X": 25,
+                "Y": 20,
+                "Z": 3
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 20
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "5f6641d2-16a5-47d8-9e24-61261fbc5262",
+          "name": "Standee 3",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 27
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 52
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 13
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": -75
+            },
+            "y": {
+              "$type": "fixed",
+              "size": -14
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "horizontalCutouts": {
+            "top": {
+              "$type": "cube",
+              "size": {
+                "X": 19,
+                "Y": 14,
+                "Z": 10
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": -4
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              }
+            },
+            "bottom": {
+              "$type": "cube",
+              "size": {
+                "X": 19,
+                "Y": 14,
+                "Z": 10
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 4
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              }
+            },
+            "right": {
+              "$type": "cube",
+              "size": {
+                "X": 25,
+                "Y": 20,
+                "Z": 3
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 20
+            },
+            "left": {
+              "$type": "cube",
+              "size": {
+                "X": 25,
+                "Y": 20,
+                "Z": 3
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 20
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "30330474-4af1-48b6-8b4a-40154eb5c998",
+          "name": "Standee 4",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 27
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 52
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 13
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 15
+            },
+            "y": {
+              "$type": "fixed",
+              "size": -14
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "horizontalCutouts": {
+            "top": {
+              "$type": "cube",
+              "size": {
+                "X": 19,
+                "Y": 14,
+                "Z": 10
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": -4
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              }
+            },
+            "bottom": {
+              "$type": "cube",
+              "size": {
+                "X": 19,
+                "Y": 14,
+                "Z": 10
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 4
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              }
+            },
+            "right": {
+              "$type": "cube",
+              "size": {
+                "X": 25,
+                "Y": 20,
+                "Z": 3
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 20
+            },
+            "left": {
+              "$type": "cube",
+              "size": {
+                "X": 25,
+                "Y": 20,
+                "Z": 3
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 20
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "5e17e07a-7dd9-462c-b2fa-62ea74432bb7",
+          "name": "Standee 5",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 27
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 52
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 13
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 45
+            },
+            "y": {
+              "$type": "fixed",
+              "size": -14
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "horizontalCutouts": {
+            "top": {
+              "$type": "cube",
+              "size": {
+                "X": 19,
+                "Y": 14,
+                "Z": 10
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": -4
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              }
+            },
+            "bottom": {
+              "$type": "cube",
+              "size": {
+                "X": 19,
+                "Y": 14,
+                "Z": 10
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 4
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              }
+            },
+            "right": {
+              "$type": "cube",
+              "size": {
+                "X": 25,
+                "Y": 20,
+                "Z": 3
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 20
+            },
+            "left": {
+              "$type": "cube",
+              "size": {
+                "X": 25,
+                "Y": 20,
+                "Z": 3
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 20
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "5385afe7-d85b-4d54-949e-c6619f453d64",
+          "name": "Ghost2",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 25
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 25
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 2.5
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": -30
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 30
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "ff30a1c9-79d2-4fc0-a1bd-c4f90ea22a58",
+          "name": "Ghost3",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 25
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 25
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 2.5
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": -60
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 30
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "b5131ee7-5e8c-44b0-bc44-a83d10ff7236",
+          "name": "Ghost4",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 25
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 25
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 2.5
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 30
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 30
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "042864cd-2554-4cf9-825d-5dfc092abc6d",
+          "name": "Ghost5",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 25
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 25
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 2.5
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 60
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 30
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "5d6debc3-c05e-4bac-9fb1-02e552b17e1f",
+          "name": "GhostCutout",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 160
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 15
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 4
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 30
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "cebda3c2-f954-46f2-86d4-420f1782f853",
+          "name": "Standee 6",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 27
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 52
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 13
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 75
+            },
+            "y": {
+              "$type": "fixed",
+              "size": -14
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "horizontalCutouts": {
+            "top": {
+              "$type": "cube",
+              "size": {
+                "X": 19,
+                "Y": 14,
+                "Z": 10
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": -4
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              }
+            },
+            "bottom": {
+              "$type": "cube",
+              "size": {
+                "X": 19,
+                "Y": 14,
+                "Z": 10
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 4
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              }
+            },
+            "right": {
+              "$type": "cube",
+              "size": {
+                "X": 25,
+                "Y": 20,
+                "Z": 3
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 20
+            },
+            "left": {
+              "$type": "cube",
+              "size": {
+                "X": 25,
+                "Y": 20,
+                "Z": 3
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 20
+            }
+          }
+        }
+      ],
+      "roundRadius": 8,
+      "hidden": false
+    },
+    {
+      "$type": "box",
+      "name": "BigCards",
+      "id": "4e6b13aa-13ee-484f-9241-5db2be431f09",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 188
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 92
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 17
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "y": {
+          "$type": "fixed",
+          "size": -100
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Players.Z"
+        }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "id": "e1addbd9-66a5-4350-ae9d-2286f833a9a6",
+          "name": "CardHolder",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 130
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 90
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 16
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "horizontalCutouts": {
+            "right": {
+              "$type": "cube",
+              "size": {
+                "X": 50,
+                "Y": 50,
+                "Z": 50
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 8
+            },
+            "left": {
+              "$type": "cube",
+              "size": {
+                "X": 50,
+                "Y": 50,
+                "Z": 50
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 8
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "57979950-45fb-486f-98d0-1d108d36dff0",
+          "name": "ActiveDecker",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 25
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 25
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 2.5
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 1,
+              "gap": 2
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "893ed7bc-3234-4c03-bd6a-ffa76d69153e",
+          "name": "MotherGhost",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 25
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 25
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 2.5
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 1,
+              "gap": 2
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        }
+      ],
+      "roundRadius": 8,
+      "hidden": false
+    },
+    {
+      "$type": "box",
+      "name": "Tokens",
+      "id": "4d0f8db2-4c69-410b-899a-46112444bf1f",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 188
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 92
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "69,2-#BigCards.Z-#Players.Z"
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "y": {
+          "$type": "fixed",
+          "size": -100
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#BigCards.Z+#Players.Z"
+        }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "id": "06f680e7-9b84-4175-82f3-77abb71af91f",
+          "name": "Dice",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 40
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "92/2-3"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#Tokens.Z-1,2"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 2
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "roundBottom": true
+        },
+        {
+          "$type": "box",
+          "id": "2cc715e0-86fb-40f2-85f4-e85f48de0eac",
+          "name": "InnerPrograms",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 140
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 43
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#Tokens.Z-1,2"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 1,
+              "gap": 2
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "67d359c7-a83f-4090-a705-232b7095ba4d",
+          "name": "InnerInstallations",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 140
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 43
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#Tokens.Z-1,2"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 1,
+              "gap": 2
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "fb78bed6-0743-4037-a55b-b5edc53da41b",
+          "name": "PacketTokens",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 40
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "92/2-3"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#Tokens.Z-1,2"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 2
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "roundBottom": true
+        }
+      ],
+      "roundRadius": 8,
+      "hidden": false
+    },
+    {
+      "$type": "box",
+      "name": "InnerTokens",
+      "id": "4c474cc0-94f0-4142-9f66-f686a3e9e9bd",
+      "size": {
+        "x": {
+          "$type": "computed",
+          "size": 140,
+          "expression": "140-2"
+        },
+        "y": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "43-2"
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Tokens.Z-1,2-1"
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "computed",
+          "expression": "188-138"
+        },
+        "y": {
+          "$type": "fixed",
+          "size": -98
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#BigCards.Z+#Players.Z+1,2"
+        }
+      },
+      "components": [
+        {
+          "$type": "repeatable",
+          "id": "da22a5be-a869-4351-b3ca-e6f0db413d01",
+          "name": "InnerCompartments",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#InnerTokens.X-2"
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#InnerTokens.Y-2"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#InnerTokens.Z-1,2"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "amountX": 4,
+          "amountY": 1,
+          "model": {
+            "$type": "box",
+            "id": "07292fe3-5a82-4895-94a3-27506647c9c2",
+            "name": "New Component",
+            "size": {
+              "x": {
+                "$type": "computed",
+                "size": 0,
+                "expression": "#InnerTokens.X-2"
+              },
+              "y": {
+                "$type": "computed",
+                "expression": "#InnerTokens.Y-2"
+              },
+              "z": {
+                "$type": "computed",
+                "size": 0,
+                "expression": "100"
+              }
+            },
+            "location": {
+              "x": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "y": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "z": {
+                "$type": "fixed",
+                "size": 0
+              }
+            },
+            "roundBottom": true
+          }
+        }
+      ]
+    },
+    {
+      "$type": "box",
+      "name": "InnerTokens2",
+      "id": "7c4d2319-aa4d-4ef7-b568-1d9da30a6f04",
+      "size": {
+        "x": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "140-2"
+        },
+        "y": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "43-2"
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Tokens.Z-1,2-1"
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "computed",
+          "expression": "188-138"
+        },
+        "y": {
+          "$type": "fixed",
+          "size": -45
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#BigCards.Z+#Players.Z+1,2"
+        }
+      },
+      "components": [
+        {
+          "$type": "repeatable",
+          "id": "4d6375ae-7cd5-4278-a264-cb819149cd08",
+          "name": "New Component",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#InnerTokens2.X-2"
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#InnerTokens2.Y-2"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#InnerTokens2.Z-1,2"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "amountX": 3,
+          "amountY": 1,
+          "model": {
+            "$type": "box",
+            "id": "44099fc0-cc30-40e8-9400-136fb5a6f59b",
+            "name": "New Component",
+            "size": {
+              "x": {
+                "$type": "computed",
+                "size": 0,
+                "expression": "#InnerTokens2.X-2"
+              },
+              "y": {
+                "$type": "computed",
+                "size": 0,
+                "expression": "#InnerTokens2.Y-2"
+              },
+              "z": {
+                "$type": "fixed",
+                "size": 100
+              }
+            },
+            "location": {
+              "x": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "y": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "z": {
+                "$type": "fixed",
+                "size": 0
+              }
+            },
+            "roundBottom": true
+          }
+        }
+      ]
+    }
+  ]
+}

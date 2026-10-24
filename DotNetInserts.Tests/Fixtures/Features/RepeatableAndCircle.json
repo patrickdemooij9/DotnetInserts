@@ -1,0 +1,70 @@
+{
+  "name": "RepeatableAndCircle",
+  "size": { "x": 120, "y": 90, "z": 25 },
+  "parts": [
+    {
+      "$type": "box",
+      "name": "TokenTray",
+      "id": "f3000000-0000-4000-8000-000000000001",
+      "size": {
+        "x": { "$type": "fixed", "size": 120 },
+        "y": { "$type": "fixed", "size": 90 },
+        "z": { "$type": "fixed", "size": 25 }
+      },
+      "location": {
+        "x": { "$type": "fixed", "size": 0 },
+        "y": { "$type": "fixed", "size": 0 },
+        "z": { "$type": "fixed", "size": 0 }
+      },
+      "components": [
+        {
+          "$type": "repeatable",
+          "name": "TokenGrid",
+          "id": "f3000000-0000-4000-8000-000000000002",
+          "amountX": 3,
+          "amountY": 2,
+          "size": {
+            "x": { "$type": "fixed", "size": 30 },
+            "y": { "$type": "fixed", "size": 30 },
+            "z": { "$type": "fixed", "size": 20 }
+          },
+          "location": {
+            "x": { "$type": "fixed", "size": -20 },
+            "y": { "$type": "fixed", "size": 0 },
+            "z": { "$type": "fixed", "size": 0 }
+          },
+          "model": {
+            "$type": "box",
+            "name": "TokenSlot",
+            "id": "f3000000-0000-4000-8000-000000000003",
+            "size": {
+              "x": { "$type": "fixed", "size": 26 },
+              "y": { "$type": "fixed", "size": 26 },
+              "z": { "$type": "fixed", "size": 20 }
+            },
+            "location": {
+              "x": { "$type": "fixed", "size": 0 },
+              "y": { "$type": "fixed", "size": 0 },
+              "z": { "$type": "fixed", "size": 0 }
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "name": "DiscWell",
+          "id": "f3000000-0000-4000-8000-000000000004",
+          "size": {
+            "x": { "$type": "fixed", "size": 28 },
+            "y": { "$type": "fixed", "size": 28 },
+            "z": { "$type": "fixed", "size": 20 }
+          },
+          "location": {
+            "x": { "$type": "fixed", "size": 42 },
+            "y": { "$type": "fixed", "size": 0 },
+            "z": { "$type": "fixed", "size": 0 }
+          }
+        }
+      ]
+    }
+  ]
+}

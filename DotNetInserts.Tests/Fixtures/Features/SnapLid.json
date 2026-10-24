@@ -1,0 +1,103 @@
+{
+  "name": "SnapLid",
+  "size": { "x": 200, "y": 90, "z": 45 },
+  "parts": [
+    {
+      "$type": "box",
+      "name": "BreakawayArms",
+      "id": "5b000000-0000-4000-8000-000000000001",
+      "roundRadius": 6,
+      "lid": {
+        "wallSize": 3,
+        "topSize": 2,
+        "lidBoxSize": 12,
+        "skirtThickness": 1.6,
+        "clearance": 0.15,
+        "snap": {
+          "sides": ["left", "right"],
+          "armLength": 26,
+          "armHeight": 6,
+          "slotWidth": 0,
+          "detent": 0.5
+        },
+        "grip": { "sides": ["top", "bottom"], "width": 24, "depth": 1.6 }
+      },
+      "size": {
+        "x": { "$type": "fixed", "size": 95 },
+        "y": { "$type": "fixed", "size": 90 },
+        "z": { "$type": "fixed", "size": 45 }
+      },
+      "location": {
+        "x": { "$type": "fixed", "size": 0 },
+        "y": { "$type": "fixed", "size": 0 },
+        "z": { "$type": "fixed", "size": 0 }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "name": "Well",
+          "id": "5b000000-0000-4000-8000-000000000002",
+          "size": {
+            "x": { "$type": "fixed", "size": 83 },
+            "y": { "$type": "fixed", "size": 78 },
+            "z": { "$type": "fixed", "size": 36 }
+          },
+          "location": {
+            "x": { "$type": "fixed", "size": 0 },
+            "y": { "$type": "fixed", "size": 0 },
+            "z": { "$type": "fixed", "size": 0 }
+          }
+        }
+      ]
+    },
+    {
+      "$type": "box",
+      "name": "FourArmsSquareBox",
+      "id": "5b000000-0000-4000-8000-000000000003",
+      "lid": {
+        "wallSize": 3,
+        "topSize": 2.4,
+        "lidBoxSize": 14,
+        "skirtThickness": 2,
+        "clearance": 0.2,
+        "snap": {
+          "sides": ["left", "right", "top", "bottom"],
+          "armLength": 30,
+          "armHeight": 7,
+          "slotWidth": 0.8,
+          "detent": 0.7,
+          "leadInAngle": 25,
+          "retentionAngle": 40,
+          "engageClearance": 0.15
+        }
+      },
+      "size": {
+        "x": { "$type": "fixed", "size": 95 },
+        "y": { "$type": "fixed", "size": 90 },
+        "z": { "$type": "fixed", "size": 45 }
+      },
+      "location": {
+        "x": { "$type": "computed", "expression": "#BreakawayArms.X + 8" },
+        "y": { "$type": "fixed", "size": 0 },
+        "z": { "$type": "fixed", "size": 0 }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "name": "Well",
+          "id": "5b000000-0000-4000-8000-000000000004",
+          "size": {
+            "x": { "$type": "fixed", "size": 81 },
+            "y": { "$type": "fixed", "size": 76 },
+            "z": { "$type": "fixed", "size": 36 }
+          },
+          "location": {
+            "x": { "$type": "fixed", "size": 0 },
+            "y": { "$type": "fixed", "size": 0 },
+            "z": { "$type": "fixed", "size": 0 }
+          }
+        }
+      ]
+    }
+  ]
+}

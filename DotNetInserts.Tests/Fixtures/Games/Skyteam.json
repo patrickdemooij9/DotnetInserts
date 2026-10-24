@@ -1,0 +1,986 @@
+{
+  "name": "Skyteam",
+  "parts": [
+    {
+      "$type": "box",
+      "name": "Mainbox",
+      "id": "1",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 177
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 245
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 30
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "id": "8c770888-5390-4847-8201-720aea2e33df",
+          "name": "Scenarios",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 51
+            },
+            "y": {
+              "$type": "computed",
+              "size": 230,
+              "expression": "#Mainbox.Y-4"
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 21
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 1,
+              "gap": 2
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "a8f75061-e0e6-4868-b87d-480254cd0162",
+          "name": "Intern",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 29
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 186
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 2
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "(#Mainbox.X-#Mainbox.Scenarios.X)/2-2"
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": -27
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "35e7e5ed-9d96-4b93-8305-6f5e3444bff9",
+          "name": "Fuel",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 36
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 186
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 6
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "(#Mainbox.X-#Mainbox.Scenarios.X)/2-2"
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": -21
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "24808ecb-c9ce-4961-bec7-d47f945251ee",
+          "name": "Alerts",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 46
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 164
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 2
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "(#Mainbox.X-#Mainbox.Scenarios.X)/2-2"
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": -21
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "eac47896-a008-44ee-accf-7edf9a12c9e2",
+          "name": "CardHolder",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 89
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 59
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 6
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "alignType": 3,
+              "gap": 2,
+              "expression": "-(#Mainbox.X-#Mainbox.Ice.X)/2"
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": -4
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "c05546bb-7ee6-4389-a8df-2584cd48959f",
+          "name": "Ice",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 114
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 68
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 4
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 2
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "horizontalCutouts": {
+            "right": {
+              "$type": "cube",
+              "size": {
+                "X": 40,
+                "Y": 60,
+                "Z": 50
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 10
+            },
+            "top": {
+              "$type": "cube",
+              "size": {
+                "X": 30,
+                "Y": 60,
+                "Z": 30
+              },
+              "position": {
+                "x": {
+                  "$type": "fixed",
+                  "size": -18
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 10
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "e2f74242-924f-4e89-b8d5-e4d7a6922eb7",
+          "name": "Wind",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 81
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 81
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 2
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 2
+            },
+            "y": {
+              "$type": "fixed",
+              "size": -9.5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "64a4f6b5-8ede-40c9-ae91-a5a7ec9be4d2",
+          "name": "Tokens",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#Mainbox.X-#Mainbox.Scenarios.X-#Mainbox.Wind.X-8"
+            },
+            "y": {
+              "$type": "computed",
+              "size": null,
+              "expression": "#Mainbox.Y-#Mainbox.Ice.Y-6"
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 26
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 15
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 19,
+              "alignType": 0,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "10c9517d-d737-4fe0-8656-c89f47a1658b",
+          "name": "Dice1",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 17
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 66
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 17
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 8
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 9
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "cfe24efd-476e-4c75-bcd7-a08d89998590",
+          "name": "Dice2",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 17
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 66
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 17
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 32
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 9
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "ab8a535b-3b30-4222-aba0-4d77259abafb",
+          "name": "DiceCutout",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": null,
+              "expression": "#Mainbox.Wind.X"
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#Mainbox.Y-#Mainbox.Wind.Y-#Mainbox.Ice.Y-10"
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 8
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 2
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "29c1e512-c626-4646-be2f-bb5ed58a3327",
+          "name": "BlackDice",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 17
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 17
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 17
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 60
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 32
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "3a580e6b-705c-4726-9691-695af2784e27",
+          "name": "Airplane",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 52
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 52
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 2
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 15
+            },
+            "y": {
+              "$type": "fixed",
+              "size": -8
+            },
+            "z": {
+              "$type": "fixed",
+              "size": -8
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "d4c42659-4b03-4ea4-8f7b-e71f7c1da507",
+          "name": "Pitch",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 60
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 60
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 6
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 11
+            },
+            "y": {
+              "$type": "fixed",
+              "size": -8
+            },
+            "z": {
+              "$type": "fixed",
+              "size": -2
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "33f8f182-8084-429a-90f4-9af126666e6d",
+          "name": "Alarm",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 40
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 22
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 10
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "-(#Mainbox.X-#Mainbox.Ice.X)/2-16"
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 22
+            },
+            "z": {
+              "$type": "fixed",
+              "size": -10
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$type": "box",
+      "name": "Tokenbox",
+      "id": "b20a00f2-7f1c-4aef-9bd5-cffd9427a27d",
+      "size": {
+        "x": {
+          "$type": "computed",
+          "size": null,
+          "expression": "#Mainbox.Tokens.X-1"
+        },
+        "y": {
+          "$type": "computed",
+          "size": 50,
+          "expression": "#Mainbox.Tokens.Y-1"
+        },
+        "z": {
+          "$type": "computed",
+          "size": 50,
+          "expression": "(#Mainbox.Tokens.Z-1)/2"
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 86
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 72
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 6
+        }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "id": "5a4d3c78-37b0-4f10-b962-8e76f4e73619",
+          "name": "Airplanes",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": null,
+              "expression": "#Tokenbox.X-4"
+            },
+            "y": {
+              "$type": "computed",
+              "size": null,
+              "expression": "#Tokenbox.Y/2-3"
+            },
+            "z": {
+              "$type": "computed",
+              "size": null,
+              "expression": "#Tokenbox.Z-2"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "roundBottom": true
+        },
+        {
+          "$type": "box",
+          "id": "08c49aee-b344-46e7-bf0b-a0662c80ab33",
+          "name": "InternToken",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#Tokenbox.X-4"
+            },
+            "y": {
+              "$type": "computed",
+              "size": 4,
+              "expression": "#Tokenbox.Y/2-3"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 36,
+              "expression": "#Tokenbox.Z-2"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "roundBottom": true
+        }
+      ],
+      "roundRadius": 4
+    },
+    {
+      "$type": "box",
+      "name": "Tokenbox2",
+      "id": "cb2f0264-a56d-44ed-a5c0-5820c2bd5089",
+      "size": {
+        "x": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Mainbox.Tokens.X-1"
+        },
+        "y": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Mainbox.Tokens.Y-1"
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "(#Mainbox.Tokens.Z-1)/2"
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 86
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 72
+        },
+        "z": {
+          "$type": "computed",
+          "size": 18,
+          "expression": "#Tokenbox.Z+6"
+        }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "id": "0896ca21-0c2c-43f4-9403-c934de3dc8f0",
+          "name": "SlotOne",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": null,
+              "expression": "#Tokenbox2.X-4"
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "(#Tokenbox2.Y-4)/5-2"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#Tokenbox2.Z-2"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "roundBottom": true
+        },
+        {
+          "$type": "box",
+          "id": "2e4e1c44-0e09-40be-ab0f-aa2d831d9dc2",
+          "name": "SlotTwo",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": null,
+              "expression": "#Tokenbox2.X-4"
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "(#Tokenbox2.Y-4)/5-4"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#Tokenbox2.Z-2"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 36
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "roundBottom": true
+        },
+        {
+          "$type": "box",
+          "id": "4efd826c-41e8-44b5-af7b-01ebd622afbe",
+          "name": "SlotThree",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#Tokenbox2.X-4"
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "(#Tokenbox2.Y-4)/5"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#Tokenbox2.Z-2"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0,
+              "alignType": 2,
+              "gap": 62
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "roundBottom": true
+        },
+        {
+          "$type": "box",
+          "id": "ee282a4a-4f3c-4f52-bf03-912629fb7166",
+          "name": "SlotFour",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#Tokenbox2.X-4"
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "(#Tokenbox2.Y-4)/5-4"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#Tokenbox2.Z-2"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 36
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "roundBottom": true
+        },
+        {
+          "$type": "box",
+          "id": "613c62cb-fc94-44ec-8204-74ed39c4d650",
+          "name": "SlotFive",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#Tokenbox2.X-4"
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "(#Tokenbox2.Y-4)/5-2"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#Tokenbox2.Z-2"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "roundBottom": true
+        }
+      ],
+      "roundRadius": 4
+    }
+  ],
+  "size": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  }
+}

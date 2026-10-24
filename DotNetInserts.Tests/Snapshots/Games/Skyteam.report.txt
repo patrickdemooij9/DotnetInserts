@@ -1,0 +1,13 @@
+insert: Skyteam
+box:    ? x ? x ? mm   (? = not declared, fit not checked on that axis)
+parts:  3
+
+part                    corner (x,y,z)            size (x,y,z)              
+----------------------------------------------------------------------------
+Mainbox                 (0, 0, 0)                 (177, 245, 30)            
+Tokenbox                (86, 72, 6)               (36, 170, 12)             
+Tokenbox2               (86, 72, 18)              (36, 170, 12)             
+
+issues: 2
+  [Nested] Tokenbox sits inside Mainbox
+  [Nested] Tokenbox2 sits inside Mainbox

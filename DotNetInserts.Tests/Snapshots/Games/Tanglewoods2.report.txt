@@ -1,0 +1,11 @@
+insert: Tanglewoods2
+box:    ? x ? x ? mm   (? = not declared, fit not checked on that axis)
+parts:  2
+
+part                    corner (x,y,z)            size (x,y,z)              
+----------------------------------------------------------------------------
+Box                     (0, 0, 0)                 (250, 142, 98)            
+CardBox                 (2, 2, 0)                 (30, 67, 92)              
+
+issues: 1
+  [Nested] CardBox sits inside Box

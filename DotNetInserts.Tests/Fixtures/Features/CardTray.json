@@ -1,0 +1,42 @@
+{
+  "name": "CardTray",
+  "size": { "x": 120, "y": 90, "z": 30 },
+  "parts": [
+    {
+      "$type": "box",
+      "name": "DividerTray",
+      "id": "f6000000-0000-4000-8000-000000000001",
+      "size": {
+        "x": { "$type": "fixed", "size": 120 },
+        "y": { "$type": "fixed", "size": 90 },
+        "z": { "$type": "fixed", "size": 30 }
+      },
+      "location": {
+        "x": { "$type": "fixed", "size": 0 },
+        "y": { "$type": "fixed", "size": 0 },
+        "z": { "$type": "fixed", "size": 0 }
+      },
+      "components": [
+        {
+          "$type": "cardTray",
+          "name": "Slots",
+          "id": "f6000000-0000-4000-8000-000000000002",
+          "numberOfSlots": 4,
+          "dividerWallSize": 1.5,
+          "dividerSize": { "X": 20, "Y": 60, "Z": 20 },
+          "dividerBottomCutoutSize": { "X": 10, "Y": 10, "Z": 5 },
+          "size": {
+            "x": { "$type": "fixed", "size": 110 },
+            "y": { "$type": "fixed", "size": 80 },
+            "z": { "$type": "fixed", "size": 26 }
+          },
+          "location": {
+            "x": { "$type": "fixed", "size": 0 },
+            "y": { "$type": "fixed", "size": 0 },
+            "z": { "$type": "fixed", "size": 0 }
+          }
+        }
+      ]
+    }
+  ]
+}

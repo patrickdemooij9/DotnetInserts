@@ -1,0 +1,11 @@
+insert: Alignment
+box:    200 x 100 x 30 mm
+parts:  3
+
+part                    corner (x,y,z)            size (x,y,z)              
+----------------------------------------------------------------------------
+Anchor                  (0, 0, 0)                 (60, 40, 20)              
+RightOfAnchor           (65, 0, 0)                (40, 40, 20)              
+AboveRightOfAnchor      (65, 44, 0)               (30, 30, 20)              
+
+issues: none

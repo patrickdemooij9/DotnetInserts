@@ -1,0 +1,38 @@
+{
+  "name": "BoxWithWell",
+  "size": { "x": 100, "y": 80, "z": 30 },
+  "parts": [
+    {
+      "$type": "box",
+      "name": "Tray",
+      "id": "f0000000-0000-4000-8000-000000000001",
+      "size": {
+        "x": { "$type": "fixed", "size": 100 },
+        "y": { "$type": "fixed", "size": 80 },
+        "z": { "$type": "fixed", "size": 30 }
+      },
+      "location": {
+        "x": { "$type": "fixed", "size": 0 },
+        "y": { "$type": "fixed", "size": 0 },
+        "z": { "$type": "fixed", "size": 0 }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "name": "Well",
+          "id": "f0000000-0000-4000-8000-000000000002",
+          "size": {
+            "x": { "$type": "fixed", "size": 96 },
+            "y": { "$type": "fixed", "size": 76 },
+            "z": { "$type": "fixed", "size": 28 }
+          },
+          "location": {
+            "x": { "$type": "fixed", "size": 0 },
+            "y": { "$type": "fixed", "size": 0 },
+            "z": { "$type": "fixed", "size": 0 }
+          }
+        }
+      ]
+    }
+  ]
+}

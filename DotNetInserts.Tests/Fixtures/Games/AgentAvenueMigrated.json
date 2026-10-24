@@ -1,0 +1,596 @@
+{
+  "name": "AgentAvenue",
+  "size": {
+    "x": 170,
+    "y": 120,
+    "z": 32
+  },
+  "parts": [
+    {
+      "$type": "box",
+      "name": "AgentCards",
+      "id": "a1000000-0000-4000-8000-000000000001",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 98
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 74
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 32
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      },
+      "roundRadius": 4,
+      "components": [
+        {
+          "$type": "box",
+          "name": "Well",
+          "id": "a1000000-0000-4000-8000-000000000002",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 94
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 70
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 30
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "cutouts": [
+            {
+              "$type": "cube",
+              "side": "right",
+              "mode": "through",
+              "size": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 30
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 30
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 10
+                }
+              },
+              "offset": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 30
+            },
+            {
+              "$type": "scoop",
+              "side": "right",
+              "mode": "notch",
+              "size": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 30
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 30
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 20
+                }
+              },
+              "offset": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "curveSize": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "box",
+      "name": "BlackMarket",
+      "id": "b2000000-0000-4000-8000-000000000001",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 72
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 120
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 32
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "computed",
+          "expression": "#AgentCards.X"
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      },
+      "roundRadius": 4,
+      "components": [
+        {
+          "$type": "box",
+          "name": "Well",
+          "id": "b2000000-0000-4000-8000-000000000002",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 68
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 95
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 30
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "cutouts": [
+            {
+              "$type": "cube",
+              "side": "top",
+              "mode": "through",
+              "size": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 40
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 40
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 10
+                }
+              },
+              "offset": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 10
+            },
+            {
+              "$type": "cube",
+              "side": "left",
+              "mode": "through",
+              "size": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 30
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 30
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 10
+                }
+              },
+              "offset": {
+                "x": {
+                  "$type": "fixed",
+                  "size": -23
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 30
+            },
+            {
+              "$type": "scoop",
+              "side": "top",
+              "mode": "notch",
+              "size": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 50
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 95
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 20
+                }
+              },
+              "offset": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "curveSize": 10
+            },
+            {
+              "$type": "scoop",
+              "side": "left",
+              "mode": "notch",
+              "size": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 30
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 30
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 20
+                }
+              },
+              "offset": {
+                "x": {
+                  "$type": "fixed",
+                  "size": -23
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "curveSize": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "box",
+      "name": "Meeples",
+      "id": "c3000000-0000-4000-8000-000000000001",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 98
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 46
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 32
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "y": {
+          "$type": "computed",
+          "expression": "#AgentCards.Y"
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      },
+      "roundRadius": 4,
+      "components": [
+        {
+          "$type": "box",
+          "name": "PlayerLeft",
+          "id": "c3000000-0000-4000-8000-000000000002",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 33
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 39
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 14
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": -30
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "cutouts": [
+            {
+              "$type": "cube",
+              "side": "right",
+              "mode": "through",
+              "size": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 20
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 20
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 5
+                }
+              },
+              "offset": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 10
+            }
+          ]
+        },
+        {
+          "$type": "box",
+          "name": "PlayerRight",
+          "id": "c3000000-0000-4000-8000-000000000003",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 33
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 39
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 14
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 4
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "name": "MouseTop",
+          "id": "c3000000-0000-4000-8000-000000000004",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 24
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 20
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 14
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 33
+            },
+            "y": {
+              "$type": "fixed",
+              "size": -11
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "cutouts": [
+            {
+              "$type": "cube",
+              "side": "left",
+              "mode": "through",
+              "size": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 20
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 20
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 5
+                }
+              },
+              "offset": {
+                "x": {
+                  "$type": "fixed",
+                  "size": 11
+                },
+                "y": {
+                  "$type": "fixed",
+                  "size": 0
+                },
+                "z": {
+                  "$type": "fixed",
+                  "size": 0
+                }
+              },
+              "roundRadius": 10
+            }
+          ]
+        },
+        {
+          "$type": "box",
+          "name": "MouseBottom",
+          "id": "c3000000-0000-4000-8000-000000000005",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 24
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 20
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 14
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 33
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 11
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

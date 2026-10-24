@@ -1,0 +1,9 @@
+insert: SnapCoupon
+box:    46 x 34 x 22 mm
+parts:  1
+
+part                    corner (x,y,z)            size (x,y,z)              
+----------------------------------------------------------------------------
+Coupon                  (0, 0, 0)                 (46, 34, 22)              
+
+issues: none

@@ -1,0 +1,45 @@
+{
+  "name": "Lid",
+  "size": { "x": 80, "y": 60, "z": 35 },
+  "parts": [
+    {
+      "$type": "box",
+      "name": "LiddedTray",
+      "id": "f7000000-0000-4000-8000-000000000001",
+      "roundRadius": 3,
+      "lid": {
+        "wallSize": 1.6,
+        "topSize": 2,
+        "lidBoxSize": 6,
+        "spaceUnderLid": 1
+      },
+      "size": {
+        "x": { "$type": "fixed", "size": 80 },
+        "y": { "$type": "fixed", "size": 60 },
+        "z": { "$type": "fixed", "size": 35 }
+      },
+      "location": {
+        "x": { "$type": "fixed", "size": 0 },
+        "y": { "$type": "fixed", "size": 0 },
+        "z": { "$type": "fixed", "size": 0 }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "name": "Well",
+          "id": "f7000000-0000-4000-8000-000000000002",
+          "size": {
+            "x": { "$type": "fixed", "size": 74 },
+            "y": { "$type": "fixed", "size": 54 },
+            "z": { "$type": "fixed", "size": 28 }
+          },
+          "location": {
+            "x": { "$type": "fixed", "size": 0 },
+            "y": { "$type": "fixed", "size": 0 },
+            "z": { "$type": "fixed", "size": 0 }
+          }
+        }
+      ]
+    }
+  ]
+}

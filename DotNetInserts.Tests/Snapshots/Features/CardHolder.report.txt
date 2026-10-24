@@ -1,0 +1,10 @@
+insert: CardHolder
+box:    160 x 100 x 40 mm
+parts:  2
+
+part                    corner (x,y,z)            size (x,y,z)              
+----------------------------------------------------------------------------
+PlainHolder             (0, 0, 0)                 (73, 100, 36.95)          
+LabelledStackable       (77, 0, 0)                (73, 100, 24)             
+
+issues: none

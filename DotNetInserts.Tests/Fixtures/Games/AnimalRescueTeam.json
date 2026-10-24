@@ -1,0 +1,1705 @@
+{
+  "name": "AnimalRescueTeam",
+  "size": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "parts": [
+    {
+      "$type": "box",
+      "name": "Vehicles",
+      "id": "1ee08506-31b6-483b-bc34-7a338c2940c5",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 212
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 80
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 4
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      },
+      "components": [
+        {
+          "$type": "circle",
+          "id": "a35adac8-ef0a-4c4d-9331-0977a5efaee5",
+          "name": "Wheel1",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 11
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 11
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "fd4eb98d-1e2f-4ea1-854d-851c4cf83de5",
+          "name": "Wheel2",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 11
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 28
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "660de950-9a35-4f84-a503-c420c4e5c4bd",
+          "name": "Wheel3",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 11
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 11
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 35
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "e0241ee1-e716-48cf-bd71-44bab2d712da",
+          "name": "Wheel4",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 11
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 28
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 35
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "29113079-aa09-4936-8206-1aa96b5fba01",
+          "name": "WheelTruck1",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 11
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 87
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "b88ee582-aeaa-4a21-99ef-1a157c276125",
+          "name": "WheelTruck2",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 11
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 130
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "3f5ab229-3e09-401e-86be-45950735dc75",
+          "name": "WheelTruck3",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 11
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 87
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 27
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "9a7738ff-8799-459d-8de4-1850b3770cf9",
+          "name": "WheelTruck4",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 11
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 130
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 27
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "0de5f36a-92bc-4b49-883b-f2ac65aa2562",
+          "name": "WheelMotor1",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 43
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 31
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 4
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 1,
+              "gap": 2
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 2
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "a3431778-fe29-4b29-8ecd-7eecee687801",
+          "name": "WheelBoat1",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 10.5
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 5
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 11
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 6
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 5
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "eff0dec9-219d-4553-ade5-5fe5378f62ba",
+          "name": "WheelBoat2",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 10.5
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 5
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 11
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 33
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 5
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "dc5b09d1-7b2b-44ea-8147-5789f43d3e56",
+          "name": "WheelBigCar1",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 11
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 86
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 4
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "bc627502-4339-4219-8660-941a8e028434",
+          "name": "WheelBigCar2",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 11
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 86
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 34
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "edc6d04b-5a90-45a3-af24-f3796a64983e",
+          "name": "WheelBigCar3",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 11
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 119
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 4
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "dafa4807-0dff-482b-9e59-77d32f08a599",
+          "name": "WheelBigCar4",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 11
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 119
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 34
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "86c7d9ea-7da8-420a-bf07-27d86565d6d5",
+          "name": "WheelCar1",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 11
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 1,
+              "gap": 11
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 4
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "d696cd3a-f4d0-4813-8149-e5f6aa1ab1c6",
+          "name": "WheelCar2",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 11
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 1,
+              "gap": 11
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 31
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "6807ed2a-4241-4a09-8321-8bb3e224a360",
+          "name": "WheelCar3",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 11
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 1,
+              "gap": 45
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 4
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          }
+        },
+        {
+          "$type": "circle",
+          "id": "785aa362-c4a7-46b2-93fc-76adff978e42",
+          "name": "WheelCar4",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 11
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 1,
+              "gap": 45
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 31
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$type": "cardHolder",
+      "name": "RescueCards",
+      "id": "2dbb82d7-08c0-43d9-b819-2cb182c0db80",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 70.6,
+          "expression": "70,6"
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 96
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 39
+        }
+      },
+      "innerSize": {
+        "x": {
+          "$type": "fixed",
+          "size": 68,
+          "expression": "68"
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 94
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 37.5
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "y": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Vehicles.Y"
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      }
+    },
+    {
+      "$type": "cardHolder",
+      "name": "MissionCards",
+      "id": "449ab3e0-537b-4fb3-a894-6deaaa24a682",
+      "size": {
+        "x": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "70,6"
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 96
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 19.5
+        }
+      },
+      "innerSize": {
+        "x": {
+          "$type": "fixed",
+          "size": 68
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 94
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 18
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 70.6,
+          "expression": "212/3"
+        },
+        "y": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Vehicles.Y"
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      }
+    },
+    {
+      "$type": "cardHolder",
+      "name": "EventCards",
+      "id": "646479aa-baea-4485-9d87-34e7e28c9e01",
+      "size": {
+        "x": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "70,6"
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 96
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 19.5
+        }
+      },
+      "innerSize": {
+        "x": {
+          "$type": "fixed",
+          "size": 68
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 94
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 18
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 70.6,
+          "expression": "212/3"
+        },
+        "y": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Vehicles.Y"
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 19.5
+        }
+      }
+    },
+    {
+      "$type": "cardHolder",
+      "name": "SpecialistCards",
+      "id": "449ab3e0-537b-4fb3-a894-6deaaa24a682",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 70.6,
+          "expression": "212/3"
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 96
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 19.5
+        }
+      },
+      "innerSize": {
+        "x": {
+          "$type": "fixed",
+          "size": 68
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 94
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 18
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 141.33,
+          "expression": "212/3*2"
+        },
+        "y": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Vehicles.Y"
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      }
+    },
+    {
+      "$type": "cardHolder",
+      "name": "LogisticCards",
+      "id": "646479aa-baea-4485-9d87-34e7e28c9e01",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 70.6,
+          "expression": "212/3"
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 96
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 19.5
+        }
+      },
+      "innerSize": {
+        "x": {
+          "$type": "fixed",
+          "size": 68
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 94
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 18
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 141.33,
+          "expression": "212/3*2"
+        },
+        "y": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Vehicles.Y"
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 19.5
+        }
+      }
+    },
+    {
+      "$type": "box",
+      "name": "Animals",
+      "id": "894ebedd-2af8-4480-8458-d8d5ac0862e3",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 212
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 50
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 19.5,
+          "expression": "35/2"
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 0,
+          "expression": ""
+        },
+        "y": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Vehicles.Y+#RescueCards.Y"
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      },
+      "components": [
+        {
+          "$type": "repeatable",
+          "id": "281ade17-5f70-4f1c-9977-f1edceb3ec86",
+          "name": "Inner",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 208
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 48
+            },
+            "z": {
+              "$type": "computed",
+              "expression": "18,5"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0,
+              "alignType": 1,
+              "gap": 1
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "amountX": 6,
+          "model": {
+            "$type": "box",
+            "id": "c030740a-ca09-4be4-a459-97dff7ecfa2a",
+            "name": "New Component",
+            "size": {
+              "x": {
+                "$type": "fixed",
+                "size": 33
+              },
+              "y": {
+                "$type": "fixed",
+                "size": 48
+              },
+              "z": {
+                "$type": "computed",
+                "size": 0,
+                "expression": "19,5"
+              }
+            },
+            "location": {
+              "x": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "y": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "z": {
+                "$type": "fixed",
+                "size": 0
+              }
+            },
+            "roundBottom": true
+          },
+          "amountY": 1
+        }
+      ]
+    },
+    {
+      "$type": "box",
+      "name": "LargerAnimals",
+      "id": "c701d179-690e-4863-af0c-5388331529bb",
+      "size": {
+        "x": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Animals.X"
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 71,
+          "expression": "#Animals.Y"
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 28,
+          "expression": "#Animals.Z"
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "y": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Vehicles.Y+#RescueCards.Y+#Animals.Y"
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      },
+      "components": [
+        {
+          "$type": "repeatable",
+          "id": "ae4a8bb7-c466-42f2-8362-286d609f0d78",
+          "name": "New Component",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": 33,
+              "expression": "#LargerAnimals.X-2"
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#LargerAnimals.Y-2"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#LargerAnimals.Z-1"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "amountX": 6,
+          "amountY": 1,
+          "model": {
+            "$type": "box",
+            "id": "96c48984-12d8-453f-8022-05ce9562e876",
+            "name": "New Component",
+            "size": {
+              "x": {
+                "$type": "fixed",
+                "size": 33
+              },
+              "y": {
+                "$type": "computed",
+                "size": 0,
+                "expression": "#LargerAnimals.Y-2"
+              },
+              "z": {
+                "$type": "computed",
+                "size": 0,
+                "expression": "#LargerAnimals.Z"
+              }
+            },
+            "location": {
+              "x": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "y": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "z": {
+                "$type": "fixed",
+                "size": 0
+              }
+            },
+            "roundBottom": true
+          }
+        }
+      ]
+    },
+    {
+      "$type": "box",
+      "name": "RoundTokens",
+      "id": "a5ad9913-9682-4fb7-b070-371b4c9922ed",
+      "size": {
+        "x": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Animals.X"
+        },
+        "y": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Animals.Y"
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Animals.Z"
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "y": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Vehicles.Y+#RescueCards.Y"
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Animals.Z"
+        }
+      },
+      "components": [
+        {
+          "$type": "repeatable",
+          "id": "03b1c49e-659c-4fd9-a7c2-8fe97e0fc2f5",
+          "name": "New Component",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#RoundTokens.X-2-35"
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#RoundTokens.Y-2"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#RoundTokens.Z-1"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 1,
+              "gap": 1
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "amountX": 5,
+          "amountY": 1,
+          "model": {
+            "$type": "box",
+            "id": "fd647306-1279-4a00-a800-9341346039d7",
+            "name": "New Component",
+            "size": {
+              "x": {
+                "$type": "fixed",
+                "size": 33
+              },
+              "y": {
+                "$type": "computed",
+                "size": 0,
+                "expression": "#RoundTokens.Y"
+              },
+              "z": {
+                "$type": "computed",
+                "size": 0,
+                "expression": "#RoundTokens.Z"
+              }
+            },
+            "location": {
+              "x": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "y": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "z": {
+                "$type": "fixed",
+                "size": 0
+              }
+            },
+            "roundBottom": true
+          }
+        },
+        {
+          "$type": "box",
+          "id": "0c62bb8c-3e18-4621-8590-ae0f97c84a7b",
+          "name": "Dice",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 33
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 17
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 17
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 1
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 1
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "7137c6cc-147d-4dce-acdf-b94b5f62dd46",
+          "name": "DiceTokens",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 33
+            },
+            "y": {
+              "$type": "computed",
+              "expression": "#Animals.Y-17-4"
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 17
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 1
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 2,
+              "gap": 1
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "roundBottom": true
+        },
+        {
+          "$type": "box",
+          "id": "639a2552-0037-4a72-8d7f-066049989cf9",
+          "name": "DiceCutout",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 20
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 25
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 8
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 7.5
+            },
+            "y": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 0,
+              "gap": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "$type": "box",
+      "name": "OtherTokens",
+      "id": "d4d8ba5b-20fe-448d-ba9e-d3f4bbefb072",
+      "size": {
+        "x": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#LargerAnimals.X"
+        },
+        "y": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#LargerAnimals.Y"
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "39-#LargerAnimals.Z"
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "y": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Vehicles.Y+#RescueCards.Y+#Animals.Y"
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#LargerAnimals.Z"
+        }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "id": "f594e5b2-3cf6-4125-bfc7-b4c82d7d4859",
+          "name": "StorageBig",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 47.5
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 48.5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 8.5
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 1
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": -2
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "9719ae9b-43dc-4fef-be63-6ae41c679f1e",
+          "name": "StorageSmall",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 37
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 38.5
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 8.5
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 50
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": -2
+            }
+          }
+        },
+        {
+          "$type": "repeatable",
+          "id": "81893da4-67a8-4e29-a376-97a20ada5c22",
+          "name": "Tokens",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#OtherTokens.X-47,5-37-5-35"
+            },
+            "y": {
+              "$type": "computed",
+              "expression": "#OtherTokens.Y-2"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#OtherTokens.Z-1"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 1,
+              "gap": 1
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "amountX": 2,
+          "amountY": 1,
+          "model": {
+            "$type": "box",
+            "id": "3a3d4471-a997-461b-ac6c-4762f2404fc6",
+            "name": "New Component",
+            "size": {
+              "x": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "y": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "z": {
+                "$type": "computed",
+                "expression": "#OtherTokens.Z"
+              }
+            },
+            "location": {
+              "x": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "y": {
+                "$type": "fixed",
+                "size": 0
+              },
+              "z": {
+                "$type": "fixed",
+                "size": 0
+              }
+            },
+            "roundBottom": true
+          }
+        },
+        {
+          "$type": "box",
+          "id": "c815fd9b-efad-4161-997a-3b643d716040",
+          "name": "Bunny",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 86
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 54
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 2
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 1
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "e0ef2378-7cf5-4222-868c-629ea02ef202",
+          "name": "Players",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 32
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#OtherTokens.Y-2"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#OtherTokens.Z-1"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "expression": "#OtherTokens.Tokens.X+2",
+              "alignType": 1,
+              "gap": 91
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

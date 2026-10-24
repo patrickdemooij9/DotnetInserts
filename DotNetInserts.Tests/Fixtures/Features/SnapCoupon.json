@@ -1,0 +1,54 @@
+{
+  "name": "SnapCoupon",
+  "size": { "x": 46, "y": 34, "z": 22 },
+  "parts": [
+    {
+      "$type": "box",
+      "name": "Coupon",
+      "id": "5a000000-0000-4000-8000-000000000001",
+      "roundRadius": 4,
+      "lid": {
+        "wallSize": 3,
+        "topSize": 1.6,
+        "lidBoxSize": 9,
+        "skirtThickness": 1.6,
+        "clearance": 0.15,
+        "snap": {
+          "sides": ["left", "right"],
+          "armLength": 14,
+          "armHeight": 5,
+          "slotWidth": 0.6,
+          "detent": 0.5
+        },
+        "grip": { "sides": ["bottom"], "width": 16, "depth": 1.5 }
+      },
+      "size": {
+        "x": { "$type": "fixed", "size": 46 },
+        "y": { "$type": "fixed", "size": 34 },
+        "z": { "$type": "fixed", "size": 22 }
+      },
+      "location": {
+        "x": { "$type": "fixed", "size": 0 },
+        "y": { "$type": "fixed", "size": 0 },
+        "z": { "$type": "fixed", "size": 0 }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "name": "Well",
+          "id": "5a000000-0000-4000-8000-000000000002",
+          "size": {
+            "x": { "$type": "fixed", "size": 36 },
+            "y": { "$type": "fixed", "size": 24 },
+            "z": { "$type": "fixed", "size": 16 }
+          },
+          "location": {
+            "x": { "$type": "fixed", "size": 0 },
+            "y": { "$type": "fixed", "size": 0 },
+            "z": { "$type": "fixed", "size": 0 }
+          }
+        }
+      ]
+    }
+  ]
+}

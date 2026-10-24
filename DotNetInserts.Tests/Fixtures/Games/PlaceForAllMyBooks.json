@@ -1,0 +1,597 @@
+{
+  "name": "PlaceForAllMyBooks",
+  "size": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "parts": [
+    {
+      "$type": "cardHolder",
+      "name": "LittleProjects",
+      "id": "1ef575c7-a039-4246-9626-0872e2e7286b",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 73
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 100
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "55*0,65+1,2"
+        }
+      },
+      "innerSize": {
+        "x": {
+          "$type": "fixed",
+          "size": 68
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 94
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "55*0,65"
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      },
+      "roundedCorners": true
+    },
+    {
+      "$type": "cardHolder",
+      "name": "Other Neat Stuff",
+      "id": "1ef575c7-a039-4246-9626-0872e2e7286c",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 73
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 100
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "55*0,65+1,2"
+        }
+      },
+      "innerSize": {
+        "x": {
+          "$type": "fixed",
+          "size": 68
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 94
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "55*0,65"
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 73
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      },
+      "roundedCorners": true
+    },
+    {
+      "$type": "cardHolder",
+      "name": "SoloCards",
+      "id": "1ef575c7-a039-4246-9626-0872e2e7286d",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 73
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 100
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "20*0,65+1,2"
+        }
+      },
+      "innerSize": {
+        "x": {
+          "$type": "fixed",
+          "size": 68
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 94
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "20*0,65"
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 146
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      },
+      "roundedCorners": true
+    },
+    {
+      "$type": "cardHolder",
+      "name": "MajorAccomplishments",
+      "id": "1ef575c7-a039-4246-9626-0872e2e7286f",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 73
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 100
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "20*0,65+1,2"
+        }
+      },
+      "innerSize": {
+        "x": {
+          "$type": "fixed",
+          "size": 68
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 94
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "20*0,65"
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 146
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "z": {
+          "$type": "computed",
+          "expression": "20*0,65+1,2"
+        }
+      },
+      "roundedCorners": true
+    },
+    {
+      "$type": "cardHolder",
+      "name": "Player Cards",
+      "id": "1ef575c7-a039-4246-9626-0872e2e7286g",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 73
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 100
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#LittleProjects.Z-#MajorAccomplishments.Z-#SoloCards.Z"
+        }
+      },
+      "innerSize": {
+        "x": {
+          "$type": "fixed",
+          "size": 68
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 94
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#LittleProjects.Z-#MajorAccomplishments.Z-#SoloCards.Z-1,2"
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 146
+        },
+        "y": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "z": {
+          "$type": "computed",
+          "expression": "40*0,65+1,2*2"
+        }
+      },
+      "roundedCorners": true
+    },
+    {
+      "$type": "box",
+      "name": "Item1",
+      "id": "e73364b5-b655-46cb-9459-b7809b94db24",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 55
+        },
+        "y": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "(270-100)/5"
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 30
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "y": {
+          "$type": "computed",
+          "size": -30,
+          "expression": "100"
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "id": "bc5cae2a-6c79-4a9b-af52-cdabb93d9172",
+          "name": "Inner",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "35"
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#Item1.Y-4"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "28"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 2
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "roundBottom": true
+        },
+        {
+          "$type": "box",
+          "id": "e5bbff1d-979e-4c6c-91d4-e536ed194f10",
+          "name": "Books",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 11
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 19
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 21
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 1,
+              "gap": 2
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "d504be45-ea0d-4262-bbaa-8b38acf6a510",
+          "name": "BooksCutoff",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 16,
+              "expression": "16"
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#Item1.Y"
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 10
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 1,
+              "gap": 0
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        }
+      ],
+      "roundRadius": 7
+    },
+    {
+      "$type": "box",
+      "name": "Item2",
+      "id": "e73364b5-b655-46cb-9459-b7809b94db24",
+      "size": {
+        "x": {
+          "$type": "fixed",
+          "size": 55
+        },
+        "y": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "(270-100)/5"
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 30
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "fixed",
+          "size": 0
+        },
+        "y": {
+          "$type": "computed",
+          "size": -30,
+          "expression": "100+(270-100)/5"
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "id": "bc5cae2a-6c79-4a9b-af52-cdabb93d9172",
+          "name": "Inner",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#Item1.X-4"
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#Item1.Y-4"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "28"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "parentAlign",
+              "size": 0,
+              "alignType": 3,
+              "gap": 2
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          },
+          "roundBottom": true
+        }
+      ],
+      "roundRadius": 7
+    },
+    {
+      "$type": "box",
+      "name": "BagHolder",
+      "id": "0c86c3f1-c1e7-47d3-9679-3571bf821ca6",
+      "size": {
+        "x": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "219-#Item1.X"
+        },
+        "y": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "270-#LittleProjects.Y"
+        },
+        "z": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Item1.Z"
+        }
+      },
+      "location": {
+        "x": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "#Item1.X"
+        },
+        "y": {
+          "$type": "computed",
+          "size": 0,
+          "expression": "219/2"
+        },
+        "z": {
+          "$type": "fixed",
+          "size": 0
+        }
+      },
+      "components": [
+        {
+          "$type": "box",
+          "id": "4edc816b-0e73-47b1-aef6-64f096271c87",
+          "name": "Bag",
+          "size": {
+            "x": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#BagHolder.X-4"
+            },
+            "y": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#BagHolder.Y-4"
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "#BagHolder.Z-2"
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 0
+            }
+          }
+        },
+        {
+          "$type": "box",
+          "id": "91054a0c-9230-4698-b61b-642d72a0e505",
+          "name": "SoloCard",
+          "size": {
+            "x": {
+              "$type": "fixed",
+              "size": 127
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 90
+            },
+            "z": {
+              "$type": "fixed",
+              "size": 1
+            }
+          },
+          "location": {
+            "x": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "y": {
+              "$type": "fixed",
+              "size": 0
+            },
+            "z": {
+              "$type": "computed",
+              "size": 0,
+              "expression": "-#BagHolder.Z+2"
+            }
+          }
+        }
+      ],
+      "roundRadius": 7
+    }
+  ]
+}

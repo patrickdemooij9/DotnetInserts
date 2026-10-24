@@ -1,0 +1,9 @@
+insert: SvgImage
+box:    100 x 80 x 30 mm
+parts:  1
+
+part                    corner (x,y,z)            size (x,y,z)              
+----------------------------------------------------------------------------
+Tray                    (0, 0, 0)                 (100, 80, 30)             
+
+issues: none

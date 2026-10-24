@@ -1,0 +1,9 @@
+insert: CardTray
+box:    120 x 90 x 30 mm
+parts:  1
+
+part                    corner (x,y,z)            size (x,y,z)              
+----------------------------------------------------------------------------
+DividerTray             (0, 0, 0)                 (120, 90, 30)             
+
+issues: none

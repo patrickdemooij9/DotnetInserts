@@ -1,0 +1,9 @@
+insert: Lid
+box:    80 x 60 x 35 mm
+parts:  1
+
+part                    corner (x,y,z)            size (x,y,z)              
+----------------------------------------------------------------------------
+LiddedTray              (0, 0, 0)                 (80, 60, 35)              
+
+issues: none

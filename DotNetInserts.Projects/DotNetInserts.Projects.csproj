@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetInserts.Core\DotNetInserts.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="OSCADSharp">
+      <HintPath>..\..\OscadSharp\OSCADSharp\OSCADSharp\OSCADSharp\bin\Debug\OSCADSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Test\json1.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

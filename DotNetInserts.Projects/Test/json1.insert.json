@@ -1,0 +1,60 @@
+{
+  "Name": "Test",
+  "Size": {
+    "X": 200,
+    "Y": 300,
+    "Z": 200
+  },
+  "Parts": [
+    {
+      "$type": "box",
+      "Id": "Part1",
+      "Size": {
+        "X": {
+          "$type": "fixed",
+          "Size": 10
+        },
+        "Y": {
+          "$type": "fixed",
+          "Size": 20
+        },
+        "Z": {
+          "$type": "fixed",
+          "Size": 15
+        }
+      },
+      "Components": [
+        {
+          "$type": "box",
+          "Size": {
+            "X": {
+              "$type": "fixed",
+              "Size": 8
+            },
+            "Y": {
+              "$type": "fixed",
+              "Size": 18
+            },
+            "Z": {
+              "$type": "fixed",
+              "Size": 12
+            }
+          },
+          "Location": {
+            "X": 0,
+            "Y": 0,
+            "Z": 0
+          },
+          "Cutouts": {
+            "X": {
+              "Width": {
+                "Type": "Expression",
+                "Value": "prop:Part1-10"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

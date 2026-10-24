@@ -1,0 +1,267 @@
+{
+  "type": [
+    "object",
+    "null"
+  ],
+  "properties": {
+    "Name": {
+      "type": "string"
+    },
+    "Size": {
+      "type": "object",
+      "properties": {
+        "X": {
+          "type": "number",
+          "default": 0
+        },
+        "Y": {
+          "type": "number",
+          "default": 0
+        },
+        "Z": {
+          "type": "number",
+          "default": 0
+        }
+      }
+    },
+    "Parts": {
+      "type": "array",
+      "items": {
+        "type": [
+          "object",
+          "null"
+        ],
+        "required": [
+          "$type"
+        ],
+        "anyOf": [
+          {
+            "properties": {
+              "$type": {
+                "const": "box"
+              },
+              "Id": {
+                "type": "string"
+              },
+              "Size": {
+                "type": "object",
+                "properties": {
+                  "X": {
+                    "type": "object",
+                    "required": [
+                      "$type"
+                    ],
+                    "anyOf": [
+                      {
+                        "properties": {
+                          "$type": {
+                            "const": "fixed"
+                          },
+                          "Size": {
+                            "type": "number"
+                          }
+                        },
+                        "required": [
+                          "Size"
+                        ]
+                      }
+                    ]
+                  },
+                  "Y": {
+                    "type": "object",
+                    "required": [
+                      "$type"
+                    ],
+                    "anyOf": [
+                      {
+                        "properties": {
+                          "$type": {
+                            "const": "fixed"
+                          },
+                          "Size": {
+                            "type": "number"
+                          }
+                        },
+                        "required": [
+                          "Size"
+                        ]
+                      }
+                    ]
+                  },
+                  "Z": {
+                    "type": "object",
+                    "required": [
+                      "$type"
+                    ],
+                    "anyOf": [
+                      {
+                        "properties": {
+                          "$type": {
+                            "const": "fixed"
+                          },
+                          "Size": {
+                            "type": "number"
+                          }
+                        },
+                        "required": [
+                          "Size"
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "required": [
+                  "X",
+                  "Y",
+                  "Z"
+                ]
+              },
+              "Components": {
+                "type": "array",
+                "items": {
+                  "type": [
+                    "object",
+                    "null"
+                  ],
+                  "required": [
+                    "$type"
+                  ],
+                  "anyOf": [
+                    {
+                      "properties": {
+                        "$type": {
+                          "const": "box"
+                        },
+                        "Size": {
+                          "type": "object",
+                          "properties": {
+                            "X": {
+                              "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/X"
+                            },
+                            "Y": {
+                              "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/Y"
+                            },
+                            "Z": {
+                              "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/Z"
+                            }
+                          },
+                          "required": [
+                            "X",
+                            "Y",
+                            "Z"
+                          ]
+                        },
+                        "Location": {
+                          "type": "object",
+                          "properties": {
+                            "X": {
+                              "type": "number",
+                              "default": 0
+                            },
+                            "Y": {
+                              "type": "number",
+                              "default": 0
+                            },
+                            "Z": {
+                              "type": "number",
+                              "default": 0
+                            }
+                          }
+                        }
+                      },
+                      "required": [
+                        "Size",
+                        "Location"
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            "required": [
+              "Id",
+              "Size",
+              "Components"
+            ]
+          },
+          {
+            "properties": {
+              "$type": {
+                "const": "cardHolder"
+              },
+              "Id": {
+                "type": "string"
+              },
+              "Size": {
+                "type": "object",
+                "properties": {
+                  "X": {
+                    "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/X"
+                  },
+                  "Y": {
+                    "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/Y"
+                  },
+                  "Z": {
+                    "$ref": "#/properties/Parts/items/anyOf/0/properties/Size/properties/Z"
+                  }
+                },
+                "required": [
+                  "X",
+                  "Y",
+                  "Z"
+                ]
+              },
+              "InnerSize": {
+                "type": "object",
+                "properties": {
+                  "X": {
+                    "type": "number",
+                    "default": 0
+                  },
+                  "Y": {
+                    "type": "number",
+                    "default": 0
+                  },
+                  "Z": {
+                    "type": "number",
+                    "default": 0
+                  }
+                }
+              },
+              "CutoutSide": {
+                "type": "integer"
+              },
+              "RoundedCorners": {
+                "type": "boolean"
+              },
+              "Text": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "TextSize": {
+                "type": "integer"
+              },
+              "StackableBottom": {
+                "type": "boolean"
+              },
+              "StackableTop": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "Id",
+              "Size",
+              "InnerSize"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "Name",
+    "Size"
+  ]
+}
