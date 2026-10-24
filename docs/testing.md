@@ -99,7 +99,7 @@ It also takes a directory, and `--strict` makes it exit non-zero when anything i
 which is what you want if you ever wire this into a pre-commit hook or CI:
 
 ```bash
-dotnet run --project tools/insert-preview -- "C:/Users/user/Desktop/Projecten/3D Projects" --strict --no-render
+dotnet run --project tools/insert-preview -- "path/to/your/inserts" --strict --no-render
 ```
 
 Drop `--no-render` to also get a `<name>.preview.png` to look at. The report cannot tell
